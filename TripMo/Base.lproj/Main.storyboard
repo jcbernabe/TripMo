@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="TripMo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSs-af-YqE">
+                                <rect key="frame" x="40" y="281" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="QHa-5V-WlV"/>
+                                    <constraint firstAttribute="height" constant="30" id="pgS-1x-tUd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXf-Cf-IMA">
+                                <rect key="frame" x="40" y="314" width="294" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Wmy-HH-KQw"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AdC-WB-SON">
+                                <rect key="frame" x="40" y="318" width="294" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="5wt-vk-Eld"/>
+                                    <constraint firstAttribute="height" constant="30" id="FPB-a6-6Td"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ane-11-2mC">
+                                <rect key="frame" x="0.0" y="627" width="187.5" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.72156862749999995" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HLV-3A-DU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93J-0b-pks">
+                                <rect key="frame" x="187.5" y="627" width="187" height="40"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.2666666667" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CFc-s4-GUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ane-11-2mC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0tz-gX-CDk"/>
+                            <constraint firstItem="AdC-WB-SON" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Elv-cp-TEd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ane-11-2mC" secondAttribute="bottom" id="L5m-mE-efL"/>
+                            <constraint firstAttribute="trailing" secondItem="93J-0b-pks" secondAttribute="trailing" id="Rpt-zS-l8V"/>
+                            <constraint firstItem="AdC-WB-SON" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tnw-yj-9Pb"/>
+                            <constraint firstItem="93J-0b-pks" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tyf-w0-4Ln"/>
+                            <constraint firstItem="PSs-af-YqE" firstAttribute="centerX" secondItem="AdC-WB-SON" secondAttribute="centerX" id="h5p-5a-3zd"/>
+                            <constraint firstItem="eXf-Cf-IMA" firstAttribute="top" secondItem="PSs-af-YqE" secondAttribute="bottom" constant="3" id="hQN-5Z-moP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="93J-0b-pks" secondAttribute="bottom" id="igm-we-ExF"/>
+                            <constraint firstItem="eXf-Cf-IMA" firstAttribute="leading" secondItem="AdC-WB-SON" secondAttribute="leading" id="r8P-yy-rej"/>
+                            <constraint firstItem="eXf-Cf-IMA" firstAttribute="trailing" secondItem="AdC-WB-SON" secondAttribute="trailing" id="s1K-gh-COg"/>
+                            <constraint firstItem="AdC-WB-SON" firstAttribute="top" secondItem="eXf-Cf-IMA" secondAttribute="bottom" constant="3" id="s29-s5-ePv"/>
+                            <constraint firstItem="Ane-11-2mC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u3n-MA-8AT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordField" destination="AdC-WB-SON" id="sdZ-LA-1aQ"/>
+                        <outlet property="usernameEmailField" destination="PSs-af-YqE" id="rJN-TH-vu6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

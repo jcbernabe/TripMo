@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Main.storyboard */; };
+		00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD321EA46414003C30D3 /* Assets.xcassets */; };
+		00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */; };
+		00A6FD411EA46414003C30D3 /* TripMoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD401EA46414003C30D3 /* TripMoTests.swift */; };
+		00A6FD4C1EA46414003C30D3 /* TripMoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD4B1EA46414003C30D3 /* TripMoUITests.swift */; };
+		00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD5A1EA46661003C30D3 /* AppDelegate.swift */; };
+		00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD631EA478C9003C30D3 /* LoginViewController.swift */; };
+		00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD681EA478F6003C30D3 /* TripMo.xcdatamodeld */; };
+		00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */; };
+		4B9A8E9DF2CC92ACC0C9BCEC /* Pods_TripMo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F08C6FB94B93B8956F50335 /* Pods_TripMo.framework */; };
+		D4EC05680E841D205243799F /* Pods_TripMoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A19F0B0E0913898B14247 /* Pods_TripMoUITests.framework */; };
+		F1F67626013E97F9CB457054 /* Pods_TripMoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFC1527D4BE9B5272B9FF91 /* Pods_TripMoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A6FD3D1EA46414003C30D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A6FD1D1EA46414003C30D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A6FD241EA46414003C30D3;
+			remoteInfo = TripMo;
+		};
+		00A6FD481EA46414003C30D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A6FD1D1EA46414003C30D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A6FD241EA46414003C30D3;
+			remoteInfo = TripMo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A6FD251EA46414003C30D3 /* TripMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A6FD2D1EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A6FD321EA46414003C30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A6FD351EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00A6FD371EA46414003C30D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A6FD3C1EA46414003C30D3 /* TripMoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A6FD401EA46414003C30D3 /* TripMoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMoTests.swift; sourceTree = "<group>"; };
+		00A6FD421EA46414003C30D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A6FD471EA46414003C30D3 /* TripMoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A6FD4B1EA46414003C30D3 /* TripMoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMoUITests.swift; sourceTree = "<group>"; };
+		00A6FD4D1EA46414003C30D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A6FD5A1EA46661003C30D3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00A6FD631EA478C9003C30D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		00A6FD691EA478F6003C30D3 /* TripMo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripMo.xcdatamodel; sourceTree = "<group>"; };
+		00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		06BEDD41468ECA9E75EB0867 /* Pods-TripMo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.release.xcconfig"; sourceTree = "<group>"; };
+		138F5499562E9AECEB6005F1 /* Pods-TripMoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D8829F3C71164579171EAC4 /* Pods-TripMo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.debug.xcconfig"; sourceTree = "<group>"; };
+		33847979722DAF3B5AD35A26 /* Pods-TripMoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F08C6FB94B93B8956F50335 /* Pods_TripMo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripMo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFC1527D4BE9B5272B9FF91 /* Pods_TripMoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripMoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1602BFF6D2C6A8677D297F4 /* Pods-TripMoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoTests/Pods-TripMoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E46A19F0B0E0913898B14247 /* Pods_TripMoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripMoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED19CA1026362BDC5D21C02B /* Pods-TripMoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoTests/Pods-TripMoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00A6FD221EA46414003C30D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B9A8E9DF2CC92ACC0C9BCEC /* Pods_TripMo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD391EA46414003C30D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F67626013E97F9CB457054 /* Pods_TripMoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD441EA46414003C30D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EC05680E841D205243799F /* Pods_TripMoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A6FD1C1EA46414003C30D3 = {
+			isa = PBXGroup;
+			children = (
+				00A6FD271EA46414003C30D3 /* TripMo */,
+				00A6FD3F1EA46414003C30D3 /* TripMoTests */,
+				00A6FD4A1EA46414003C30D3 /* TripMoUITests */,
+				00A6FD261EA46414003C30D3 /* Products */,
+				36BBFC1BFD44B61545EE2D0A /* Pods */,
+				EA5434D292D2C87ED5E16EEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00A6FD261EA46414003C30D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD251EA46414003C30D3 /* TripMo.app */,
+				00A6FD3C1EA46414003C30D3 /* TripMoTests.xctest */,
+				00A6FD471EA46414003C30D3 /* TripMoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00A6FD271EA46414003C30D3 /* TripMo */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD6C1EA4792A003C30D3 /* Assets */,
+				00A6FD671EA478F6003C30D3 /* DataModel */,
+				00A6FD591EA46661003C30D3 /* AppDelegate */,
+				00A6FD5C1EA478C9003C30D3 /* Modules */,
+				00A6FD6B1EA47910003C30D3 /* Storyboards */,
+				00A6FD371EA46414003C30D3 /* Info.plist */,
+			);
+			path = TripMo;
+			sourceTree = "<group>";
+		};
+		00A6FD3F1EA46414003C30D3 /* TripMoTests */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD401EA46414003C30D3 /* TripMoTests.swift */,
+				00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */,
+				00A6FD421EA46414003C30D3 /* Info.plist */,
+			);
+			path = TripMoTests;
+			sourceTree = "<group>";
+		};
+		00A6FD4A1EA46414003C30D3 /* TripMoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD4B1EA46414003C30D3 /* TripMoUITests.swift */,
+				00A6FD4D1EA46414003C30D3 /* Info.plist */,
+			);
+			path = TripMoUITests;
+			sourceTree = "<group>";
+		};
+		00A6FD591EA46661003C30D3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD5A1EA46661003C30D3 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		00A6FD5C1EA478C9003C30D3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD5D1EA478C9003C30D3 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		00A6FD5D1EA478C9003C30D3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD5E1EA478C9003C30D3 /* Entity */,
+				00A6FD5F1EA478C9003C30D3 /* Interactor */,
+				00A6FD601EA478C9003C30D3 /* Presenter */,
+				00A6FD611EA478C9003C30D3 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		00A6FD5E1EA478C9003C30D3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		00A6FD5F1EA478C9003C30D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		00A6FD601EA478C9003C30D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		00A6FD611EA478C9003C30D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD621EA478C9003C30D3 /* Controllers */,
+				00A6FD641EA478C9003C30D3 /* View Models */,
+				00A6FD651EA478C9003C30D3 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00A6FD621EA478C9003C30D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD631EA478C9003C30D3 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00A6FD641EA478C9003C30D3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		00A6FD651EA478C9003C30D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00A6FD671EA478F6003C30D3 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD681EA478F6003C30D3 /* TripMo.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		00A6FD6B1EA47910003C30D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD2C1EA46414003C30D3 /* Main.storyboard */,
+				00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		00A6FD6C1EA4792A003C30D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				00A6FD321EA46414003C30D3 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		36BBFC1BFD44B61545EE2D0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D8829F3C71164579171EAC4 /* Pods-TripMo.debug.xcconfig */,
+				06BEDD41468ECA9E75EB0867 /* Pods-TripMo.release.xcconfig */,
+				ED19CA1026362BDC5D21C02B /* Pods-TripMoTests.debug.xcconfig */,
+				E1602BFF6D2C6A8677D297F4 /* Pods-TripMoTests.release.xcconfig */,
+				138F5499562E9AECEB6005F1 /* Pods-TripMoUITests.debug.xcconfig */,
+				33847979722DAF3B5AD35A26 /* Pods-TripMoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA5434D292D2C87ED5E16EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F08C6FB94B93B8956F50335 /* Pods_TripMo.framework */,
+				BAFC1527D4BE9B5272B9FF91 /* Pods_TripMoTests.framework */,
+				E46A19F0B0E0913898B14247 /* Pods_TripMoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00A6FD241EA46414003C30D3 /* TripMo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A6FD501EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMo" */;
+			buildPhases = (
+				77453E9D1EDB63F4F9B2B77E /* [CP] Check Pods Manifest.lock */,
+				00A6FD211EA46414003C30D3 /* Sources */,
+				00A6FD221EA46414003C30D3 /* Frameworks */,
+				00A6FD231EA46414003C30D3 /* Resources */,
+				C5D39C28E8E35D3AF9B4ED0C /* [CP] Embed Pods Frameworks */,
+				B6A3AB3D1DE8E9617A2E7F3D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripMo;
+			productName = TripMo;
+			productReference = 00A6FD251EA46414003C30D3 /* TripMo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00A6FD3B1EA46414003C30D3 /* TripMoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A6FD531EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMoTests" */;
+			buildPhases = (
+				96B751B29CBA67BF07CF03D2 /* [CP] Check Pods Manifest.lock */,
+				00A6FD381EA46414003C30D3 /* Sources */,
+				00A6FD391EA46414003C30D3 /* Frameworks */,
+				00A6FD3A1EA46414003C30D3 /* Resources */,
+				030AAC9EAFF60A77EF29C057 /* [CP] Embed Pods Frameworks */,
+				614ED3E4182C3DF07988912A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A6FD3E1EA46414003C30D3 /* PBXTargetDependency */,
+			);
+			name = TripMoTests;
+			productName = TripMoTests;
+			productReference = 00A6FD3C1EA46414003C30D3 /* TripMoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00A6FD461EA46414003C30D3 /* TripMoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A6FD561EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMoUITests" */;
+			buildPhases = (
+				F422120AA54F47B6D45C4A4C /* [CP] Check Pods Manifest.lock */,
+				00A6FD431EA46414003C30D3 /* Sources */,
+				00A6FD441EA46414003C30D3 /* Frameworks */,
+				00A6FD451EA46414003C30D3 /* Resources */,
+				053DF540FFD36F462373D14D /* [CP] Embed Pods Frameworks */,
+				063E35BBC9213AC820A28AAA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A6FD491EA46414003C30D3 /* PBXTargetDependency */,
+			);
+			name = TripMoUITests;
+			productName = TripMoUITests;
+			productReference = 00A6FD471EA46414003C30D3 /* TripMoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00A6FD1D1EA46414003C30D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JcBernabe;
+				TargetAttributes = {
+					00A6FD241EA46414003C30D3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8KW4SQ3F4C;
+						ProvisioningStyle = Manual;
+					};
+					00A6FD3B1EA46414003C30D3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00A6FD241EA46414003C30D3;
+					};
+					00A6FD461EA46414003C30D3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 00A6FD241EA46414003C30D3;
+					};
+				};
+			};
+			buildConfigurationList = 00A6FD201EA46414003C30D3 /* Build configuration list for PBXProject "TripMo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00A6FD1C1EA46414003C30D3;
+			productRefGroup = 00A6FD261EA46414003C30D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00A6FD241EA46414003C30D3 /* TripMo */,
+				00A6FD3B1EA46414003C30D3 /* TripMoTests */,
+				00A6FD461EA46414003C30D3 /* TripMoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00A6FD231EA46414003C30D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */,
+				00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */,
+				00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD3A1EA46414003C30D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD451EA46414003C30D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030AAC9EAFF60A77EF29C057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMoTests/Pods-TripMoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		053DF540FFD36F462373D14D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		063E35BBC9213AC820A28AAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		614ED3E4182C3DF07988912A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMoTests/Pods-TripMoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77453E9D1EDB63F4F9B2B77E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96B751B29CBA67BF07CF03D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A3AB3D1DE8E9617A2E7F3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMo/Pods-TripMo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D39C28E8E35D3AF9B4ED0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripMo/Pods-TripMo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F422120AA54F47B6D45C4A4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00A6FD211EA46414003C30D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
+				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
+				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD381EA46414003C30D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */,
+				00A6FD411EA46414003C30D3 /* TripMoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A6FD431EA46414003C30D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6FD4C1EA46414003C30D3 /* TripMoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A6FD3E1EA46414003C30D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A6FD241EA46414003C30D3 /* TripMo */;
+			targetProxy = 00A6FD3D1EA46414003C30D3 /* PBXContainerItemProxy */;
+		};
+		00A6FD491EA46414003C30D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A6FD241EA46414003C30D3 /* TripMo */;
+			targetProxy = 00A6FD481EA46414003C30D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00A6FD2C1EA46414003C30D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A6FD2D1EA46414003C30D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A6FD351EA46414003C30D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00A6FD4E1EA46414003C30D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00A6FD4F1EA46414003C30D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00A6FD511EA46414003C30D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8829F3C71164579171EAC4 /* Pods-TripMo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KW4SQ3F4C;
+				INFOPLIST_FILE = TripMo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fee1a2e7-c327-4799-9449-b4df9f2f72b5";
+				PROVISIONING_PROFILE_SPECIFIER = "* Development";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		00A6FD521EA46414003C30D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BEDD41468ECA9E75EB0867 /* Pods-TripMo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TripMo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		00A6FD541EA46414003C30D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED19CA1026362BDC5D21C02B /* Pods-TripMoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TripMoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripMo.app/TripMo";
+			};
+			name = Debug;
+		};
+		00A6FD551EA46414003C30D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1602BFF6D2C6A8677D297F4 /* Pods-TripMoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TripMoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripMo.app/TripMo";
+			};
+			name = Release;
+		};
+		00A6FD571EA46414003C30D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138F5499562E9AECEB6005F1 /* Pods-TripMoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TripMoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TripMo;
+			};
+			name = Debug;
+		};
+		00A6FD581EA46414003C30D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33847979722DAF3B5AD35A26 /* Pods-TripMoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TripMoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcbernabe.TripMoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TripMo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00A6FD201EA46414003C30D3 /* Build configuration list for PBXProject "TripMo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FD4E1EA46414003C30D3 /* Debug */,
+				00A6FD4F1EA46414003C30D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A6FD501EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FD511EA46414003C30D3 /* Debug */,
+				00A6FD521EA46414003C30D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A6FD531EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FD541EA46414003C30D3 /* Debug */,
+				00A6FD551EA46414003C30D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A6FD561EA46414003C30D3 /* Build configuration list for PBXNativeTarget "TripMoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A6FD571EA46414003C30D3 /* Debug */,
+				00A6FD581EA46414003C30D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00A6FD681EA478F6003C30D3 /* TripMo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00A6FD691EA478F6003C30D3 /* TripMo.xcdatamodel */,
+			);
+			currentVersion = 00A6FD691EA478F6003C30D3 /* TripMo.xcdatamodel */;
+			path = TripMo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00A6FD1D1EA46414003C30D3 /* Project object */;
+}
