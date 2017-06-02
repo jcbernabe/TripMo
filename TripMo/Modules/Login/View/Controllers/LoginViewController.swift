@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginPresenterDelegate {
     
 // MARK: - Login Views Outlet
 
@@ -28,18 +28,21 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var regCreateBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
     
+    let loginPresenter = LoginPresenter()
+    
 // MARK: - View Loaders
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loginPresenter.loginPresenterDelegate = self
     }
     
 // MARK: - IBAction Selector Methods - Login
     
     /// Handle action from tapping login button.
     @IBAction func loginTapped(_ sender: Any) {
-        
+        loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
     }
     
     /// Handle action from tapping create account button in login view.
@@ -63,5 +66,16 @@ class LoginViewController: UIViewController {
     @IBAction func cancelTapped(_ sender: Any) {
         
     }
+    
+// MARK: - Login Presenter Delegates
+    
+    func showLoginSuccessfulTransition() {
+        
+    }
+    
+    func showLoginErrorAlert(alert: UIAlertController) {
+        
+    }
+    
 }
 
