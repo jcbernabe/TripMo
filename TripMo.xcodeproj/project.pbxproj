@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
+		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
 		00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Main.storyboard */; };
 		00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD321EA46414003C30D3 /* Assets.xcassets */; };
 		00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
 		00A6FD251EA46414003C30D3 /* TripMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A6FD2D1EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00A6FD321EA46414003C30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007CDBF41EE15A1900B6F06E /* InitialView */ = {
+			isa = PBXGroup;
+			children = (
+				007CDBF51EE15A2700B6F06E /* ViewController.swift */,
+			);
+			path = InitialView;
+			sourceTree = "<group>";
+		};
 		00A6FD1C1EA46414003C30D3 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 		00A6FD5C1EA478C9003C30D3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				007CDBF41EE15A1900B6F06E /* InitialView */,
 				00A6FD5D1EA478C9003C30D3 /* Login */,
 			);
 			path = Modules;
@@ -239,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				00A6FD2C1EA46414003C30D3 /* Main.storyboard */,
+				007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */,
 				00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -395,6 +409,7 @@
 				00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */,
 				00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */,
 				00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */,
+				007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +574,7 @@
 			files = (
 				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
+				007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +612,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				007CDBF81EE15A8E00B6F06E /* Base */,
+			);
+			name = TravelLogs.storyboard;
+			sourceTree = "<group>";
+		};
 		00A6FD2C1EA46414003C30D3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
