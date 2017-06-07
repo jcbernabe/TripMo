@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "76788823105438ba5d6ae7ce1fa8500a"
+build_time: [549956103, 540869000]
+inputs:
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/Modules/Login/View/Controllers/LoginViewController.swift": [9223372036854775807, 0]
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/Modules/Login/Presenter/LoginPresenter.swift": [9223372036854775807, 0]
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/Modules/InitialView/ViewController.swift": [9223372036854775807, 0]
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/Modules/Login/Interactor/LoginInteractor.swift": [9223372036854775807, 0]
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/Modules/Login/Protocols/LoginProtocols.swift": [9223372036854775807, 0]
+  "/Users/Hanet/Desktop/TravelApp/TripMo/TripMo/AppDelegate/AppDelegate.swift": [9223372036854775807, 0]

@@ -9,33 +9,28 @@
 import XCTest
 import Quick
 import Nimble
+import RealmSwift
 @testable import TripMo
 
 class LoginViewControllerTests: QuickSpec {
     
-    var loginVC: LoginViewController
-
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        loginVC = LoginViewController()
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testUsernameOrEmailInput() {
-        
-        
-    }
-    
-    func testUsernameFormat() {
-        
-        //let enteredPassword = loginVC.passwordField.text
-        
-        
+    override func spec() {
+        describe("Login View Controller") {
+            
+            var loginVC: LoginViewController!
+            
+            beforeEach {
+                loginVC = LoginViewController()
+                loginVC.regPassTF.text = "test"
+                loginVC.regConfirmPassTF.text = "test"
+            }
+            
+            it("confirms password") {
+                let passwordMatch = loginVC.confirmPassword()
+                
+                expect(passwordMatch).to(beTrue())
+            }
+            
+        }
     }
 }

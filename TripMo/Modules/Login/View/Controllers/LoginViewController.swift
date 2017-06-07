@@ -24,7 +24,7 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     @IBOutlet weak var registrationView: UIView!
     @IBOutlet weak var regUnameTF: UITextField!
     @IBOutlet weak var regPassTF: UITextField!
-    @IBOutlet weak var regEmailTF: UITextField!
+    @IBOutlet weak var regConfirmPassTF: UITextField!
     @IBOutlet weak var regCreateBtn: UIButton!
     @IBOutlet weak var cancelBtn: UIButton!
     
@@ -42,16 +42,22 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     
     /// Handle action from tapping login button.
     @IBAction func loginTapped(_ sender: Any) {
+        self.view.endEditing(true)
+        
         loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
     }
     
     /// Handle action from tapping create account button in login view.
     @IBAction func loginCreateAcctTapped(_ sender: Any) {
+        self.view.endEditing(true)
         
+        self.view.sendSubview(toBack: loginView)
+        self.view.bringSubview(toFront: registrationView)
     }
     
     /// Handle action from tapping forgot password button.
     @IBAction func forgotPassTapped(_ sender: Any) {
+        self.view.endEditing(true)
         
     }
 
@@ -59,23 +65,53 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
 
     /// Handle action from tapping create account button in registration view.
     @IBAction func registrationCreateAcctTapped(_ sender: Any) {
+        self.view.endEditing(true)
         
+        if confirmPassword() == false {
+            DispatchQueue.main.async {
+                let alertController = UIAlertController(title: "YEAH!", message: "Login Success", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
+            return;
+        }
+        
+        loginPresenter.handleRegistrationWith(username: regUnameTF.text!, password: regConfirmPassTF.text!)
     }
     
     /// Handle action from tapping cancel button.
     @IBAction func cancelTapped(_ sender: Any) {
+        self.view.endEditing(true)
         
+        self.view.sendSubview(toBack: registrationView)
+        self.view.bringSubview(toFront: loginView)
     }
     
 // MARK: - Login Presenter Delegates
     
-    func showLoginSuccessfulTransition() {
+    func showLoginRegistrationSuccessfulTransition() {
         
+        DispatchQueue.main.async {
+            let alertController = UIAlertController(title: "YEAH!", message: "Login Success", preferredStyle: .alert)
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
-    func showLoginErrorAlert(alert: UIAlertController) {
-        
+    func showLoginRegistrationErrorAlert(alert: UIAlertController) {
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
+// MARK: - Confirm Password
+    
+    func confirmPassword() -> Bool {
+        
+        if regPassTF.text! != regConfirmPassTF.text! {
+            return false
+        }
+        
+        return true
+    }
 }
 

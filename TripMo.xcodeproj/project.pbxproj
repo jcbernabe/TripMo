@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
 		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
-		007CDBFD1EE1870E00B6F06E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginInteractor.swift */; };
+		007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */; };
 		007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */; };
 		007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC021EE18B0400B6F06E /* LoginProtocols.swift */; };
 		00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Main.storyboard */; };
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
-		007CDBFC1EE1870E00B6F06E /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractor.swift; sourceTree = "<group>"; };
 		007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		007CDC021EE18B0400B6F06E /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		00A6FD251EA46414003C30D3 /* TripMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,7 +220,7 @@
 		00A6FD5F1EA478C9003C30D3 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				007CDBFC1EE1870E00B6F06E /* LoginInteractor.swift */,
+				007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -601,7 +601,7 @@
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
 				007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */,
 				007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */,
-				007CDBFD1EE1870E00B6F06E /* LoginInteractor.swift in Sources */,
+				007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */,
 				007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
 			);

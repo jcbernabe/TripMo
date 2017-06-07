@@ -4,25 +4,24 @@
 target 'TripMo' do
   use_frameworks!
 
-	def project_pods
-		pod ‘Quick’
-		pod ‘Nimble’
-		pod ‘RealmSwift’
-	end
-		
+pod ‘RealmSwift’
 
   # Pods for TripMo
 
   target 'TripMoTests' do
     inherit! :search_paths
     # Pods for testing
-    project_pods
+	pod ‘Quick’
+	pod ‘Nimble’
+	pod ‘RealmSwift’
   end
 
   target 'TripMoUITests' do
     inherit! :search_paths
     # Pods for testing
-    project_pods
+  	pod ‘Quick’
+	pod ‘Nimble’
+	pod ‘RealmSwift’
   end
 
 end

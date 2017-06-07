@@ -12,28 +12,44 @@ class LoginPresenter: NSObject, LoginInteractorDelegate, LoginPresenterInterface
 
     weak var loginPresenterDelegate: LoginPresenterDelegate?
     
-    var loginInteractor: LoginInteractor
+    var loginRegistrationInteractor: LoginRegistrationInteractor
     
     override init() {
-        self.loginInteractor = LoginInteractor()
+        self.loginRegistrationInteractor = LoginRegistrationInteractor()
         
         super.init()
         
-        self.loginInteractor.loginInteractorDelegate = self
+        self.loginRegistrationInteractor.loginInteractorDelegate = self
     }
     
     func handleLoginWith(username: String, password: String) {
-        
+        loginRegistrationInteractor.loginUserWith(username: username, password: password)
+    }
+    
+    func handleRegistrationWith(username: String, password: String) {
+        loginRegistrationInteractor.registerUserWith(username: username, password: password)
     }
     
 // MARK: - Login Interactor Delegates
     
     func loginSuccessful() {
-        
+        loginPresenterDelegate?.showLoginRegistrationSuccessfulTransition()
     }
     
-    func loginFailed() {
+    func loginFailedWithError(errorText: String, isRegister: Bool) {
+    
+        var titleString = ""
         
+        if isRegister {
+            titleString = "Registration Error"
+        } else {
+            titleString = "Login Error"
+        }
+        
+        let alert = UIAlertController(title: titleString, message: errorText, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        loginPresenterDelegate?.showLoginRegistrationErrorAlert(alert: alert)
     }
     
 }

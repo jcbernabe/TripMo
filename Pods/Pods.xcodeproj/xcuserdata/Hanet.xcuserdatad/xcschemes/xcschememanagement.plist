@@ -27,7 +27,7 @@
 		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
@@ -42,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1440593DED702257C11EB5BAAC5F1B22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>36BAD8AFC9B29CF9A8608D1AE6F60E58</key>
 		<dict>
 			<key>primary</key>
@@ -52,17 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B008919FD85A80D89B72DC1FF974820</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>5EAD26FEFD7C04C3E2C7218C2145C13E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86C7CD69C6208B44BD232BE4564D2B0F</key>
+		<key>8A5C1D25FA867627A7652499614E1924</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBC728B11391D59769ADA602FC5A7FF8</key>
+		<key>A18228B3E739C5CB3E9E159F06B4695F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
