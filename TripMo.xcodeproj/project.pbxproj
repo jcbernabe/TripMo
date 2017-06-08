@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001977EF1EE94F9E00626323 /* TravelLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977EE1EE94F9E00626323 /* TravelLogsViewController.swift */; };
+		001977F21EE9518500626323 /* TravelListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977F11EE9518500626323 /* TravelListCell.swift */; };
+		001977F41EE9535D00626323 /* TravelListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977F31EE9535D00626323 /* TravelListProtocols.swift */; };
+		001977F81EE953D000626323 /* TravelListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977F71EE953D000626323 /* TravelListCellViewModel.swift */; };
+		001977FA1EE956AA00626323 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977F91EE956AA00626323 /* Travel.swift */; };
+		001977FC1EE9574600626323 /* Amenities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977FB1EE9574600626323 /* Amenities.swift */; };
+		001977FE1EE959D700626323 /* ContactPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001977FD1EE959D700626323 /* ContactPerson.swift */; };
+		001978091EE9640F00626323 /* CreateTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978081EE9640F00626323 /* CreateTravelViewController.swift */; };
+		0019780D1EE965E600626323 /* LocationSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019780B1EE965E600626323 /* LocationSearchCell.swift */; };
+		0019780E1EE965E600626323 /* LocationSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0019780C1EE965E600626323 /* LocationSearchCell.xib */; };
+		001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019780F1EE96B4400626323 /* CreateTravelProtocols.swift */; };
+		001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978111EE96B5600626323 /* CreateTravelInteractor.swift */; };
+		001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978131EE96B6000626323 /* CreateTravelPresenter.swift */; };
 		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
 		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
 		007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */; };
@@ -44,6 +57,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001977EE1EE94F9E00626323 /* TravelLogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsViewController.swift; sourceTree = "<group>"; };
+		001977F11EE9518500626323 /* TravelListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelListCell.swift; sourceTree = "<group>"; };
+		001977F31EE9535D00626323 /* TravelListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelListProtocols.swift; sourceTree = "<group>"; };
+		001977F71EE953D000626323 /* TravelListCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelListCellViewModel.swift; sourceTree = "<group>"; };
+		001977F91EE956AA00626323 /* Travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		001977FB1EE9574600626323 /* Amenities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amenities.swift; sourceTree = "<group>"; };
+		001977FD1EE959D700626323 /* ContactPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPerson.swift; sourceTree = "<group>"; };
+		001978081EE9640F00626323 /* CreateTravelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelViewController.swift; sourceTree = "<group>"; };
+		0019780B1EE965E600626323 /* LocationSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchCell.swift; sourceTree = "<group>"; };
+		0019780C1EE965E600626323 /* LocationSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationSearchCell.xib; sourceTree = "<group>"; };
+		0019780F1EE96B4400626323 /* CreateTravelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelProtocols.swift; sourceTree = "<group>"; };
+		001978111EE96B5600626323 /* CreateTravelInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelInteractor.swift; sourceTree = "<group>"; };
+		001978131EE96B6000626323 /* CreateTravelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelPresenter.swift; sourceTree = "<group>"; };
 		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
 		007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractor.swift; sourceTree = "<group>"; };
@@ -103,6 +129,192 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001977E31EE94E6800626323 /* RealmService */ = {
+			isa = PBXGroup;
+			children = (
+				001977E41EE94E6800626323 /* RealmManager */,
+			);
+			path = RealmService;
+			sourceTree = "<group>";
+		};
+		001977E41EE94E6800626323 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		001977E51EE94EAC00626323 /* TravelLogs */ = {
+			isa = PBXGroup;
+			children = (
+				001977E61EE94EAC00626323 /* Entity */,
+				001977E71EE94EAC00626323 /* Interactor */,
+				001977E81EE94EAC00626323 /* Presenter */,
+				001977E91EE94EAC00626323 /* Protocols */,
+				001977EA1EE94EAC00626323 /* View */,
+			);
+			path = TravelLogs;
+			sourceTree = "<group>";
+		};
+		001977E61EE94EAC00626323 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				001977F91EE956AA00626323 /* Travel.swift */,
+				001977FB1EE9574600626323 /* Amenities.swift */,
+				001977FD1EE959D700626323 /* ContactPerson.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		001977E71EE94EAC00626323 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		001977E81EE94EAC00626323 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		001977E91EE94EAC00626323 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				001977F31EE9535D00626323 /* TravelListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		001977EA1EE94EAC00626323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				001977EB1EE94EAC00626323 /* Controllers */,
+				001977EC1EE94EAC00626323 /* ViewModels */,
+				001977ED1EE94EAC00626323 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		001977EB1EE94EAC00626323 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				001977EE1EE94F9E00626323 /* TravelLogsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		001977EC1EE94EAC00626323 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				001977F71EE953D000626323 /* TravelListCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		001977ED1EE94EAC00626323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				001977F01EE94FB500626323 /* LogsListCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		001977F01EE94FB500626323 /* LogsListCell */ = {
+			isa = PBXGroup;
+			children = (
+				001977F11EE9518500626323 /* TravelListCell.swift */,
+			);
+			path = LogsListCell;
+			sourceTree = "<group>";
+		};
+		001977FF1EE963F500626323 /* CreateTravel */ = {
+			isa = PBXGroup;
+			children = (
+				001978001EE963F500626323 /* Entity */,
+				001978011EE963F500626323 /* Interactor */,
+				001978021EE963F500626323 /* Presenter */,
+				001978031EE963F500626323 /* Protocols */,
+				001978041EE963F500626323 /* View */,
+			);
+			path = CreateTravel;
+			sourceTree = "<group>";
+		};
+		001978001EE963F500626323 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		001978011EE963F500626323 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				001978111EE96B5600626323 /* CreateTravelInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		001978021EE963F500626323 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				001978131EE96B6000626323 /* CreateTravelPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		001978031EE963F500626323 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0019780F1EE96B4400626323 /* CreateTravelProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		001978041EE963F500626323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				001978051EE963F500626323 /* Controllers */,
+				001978061EE963F500626323 /* ViewModels */,
+				001978071EE963F500626323 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		001978051EE963F500626323 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				001978081EE9640F00626323 /* CreateTravelViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		001978061EE963F500626323 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		001978071EE963F500626323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0019780A1EE965AF00626323 /* CreateTravelCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0019780A1EE965AF00626323 /* CreateTravelCells */ = {
+			isa = PBXGroup;
+			children = (
+				0019780B1EE965E600626323 /* LocationSearchCell.swift */,
+				0019780C1EE965E600626323 /* LocationSearchCell.xib */,
+			);
+			path = CreateTravelCells;
+			sourceTree = "<group>";
+		};
 		007CDBF41EE15A1900B6F06E /* InitialView */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +367,7 @@
 				00A6FD671EA478F6003C30D3 /* DataModel */,
 				00A6FD591EA46661003C30D3 /* AppDelegate */,
 				007CDBFB1EE186DB00B6F06E /* GlobalEntity */,
+				001977E31EE94E6800626323 /* RealmService */,
 				00A6FD5C1EA478C9003C30D3 /* Modules */,
 				00A6FD6B1EA47910003C30D3 /* Storyboards */,
 				00A6FD371EA46414003C30D3 /* Info.plist */,
@@ -194,6 +407,8 @@
 			children = (
 				007CDBF41EE15A1900B6F06E /* InitialView */,
 				00A6FD5D1EA478C9003C30D3 /* Login */,
+				001977E51EE94EAC00626323 /* TravelLogs */,
+				001977FF1EE963F500626323 /* CreateTravel */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -432,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */,
+				0019780E1EE965E600626323 /* LocationSearchCell.xib in Resources */,
 				00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */,
 				00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */,
 				007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */,
@@ -598,11 +814,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
+				001977FE1EE959D700626323 /* ContactPerson.swift in Sources */,
+				0019780D1EE965E600626323 /* LocationSearchCell.swift in Sources */,
+				001977F41EE9535D00626323 /* TravelListProtocols.swift in Sources */,
+				001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */,
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
+				001977F21EE9518500626323 /* TravelListCell.swift in Sources */,
 				007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */,
+				001977EF1EE94F9E00626323 /* TravelLogsViewController.swift in Sources */,
 				007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */,
+				001978091EE9640F00626323 /* CreateTravelViewController.swift in Sources */,
 				007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */,
+				001977F81EE953D000626323 /* TravelListCellViewModel.swift in Sources */,
+				001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */,
+				001977FA1EE956AA00626323 /* Travel.swift in Sources */,
+				001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */,
 				007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */,
+				001977FC1EE9574600626323 /* Amenities.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

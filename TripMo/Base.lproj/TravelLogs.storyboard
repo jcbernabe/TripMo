@@ -1,10 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VqT-Q0-gXe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Travel Logs View Controller-->
+        <scene sceneID="W5J-sV-JuD">
+            <objects>
+                <viewController storyboardIdentifier="TravelLogsViewController" id="IuS-jP-ZtW" customClass="TravelLogsViewController" customModule="TripMo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vd4-ZW-HDs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Poa-Bs-V4h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CKT-pz-wQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-mU-Cqn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelListCell" rowHeight="175" id="1ZL-1C-8fe" customClass="TravelListCell" customModule="TripMo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="175"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ZL-1C-8fe" id="dTW-2A-zYf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3r1-ea-eMv">
+                                                    <rect key="frame" x="5" y="5" width="365" height="164.5"/>
+                                                    <color key="backgroundColor" red="0.58431372550000005" green="0.87843137250000003" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="  Test username  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lck-wO-F4R">
+                                                    <rect key="frame" x="8" y="8" width="129.5" height="23.5"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.24960579128440366" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" verticalCompressionResistancePriority="751" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRw-do-ABV">
+                                                    <rect key="frame" x="50" y="114" width="317" height="52"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.24960579129999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ib-0b-4V6">
+                                                    <rect key="frame" x="327" y="8" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="HcW-Y5-0H6"/>
+                                                        <constraint firstAttribute="width" constant="40" id="oBW-Wv-ASu"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Fave"/>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3r1-ea-eMv" firstAttribute="top" secondItem="dTW-2A-zYf" secondAttribute="top" constant="5" id="8AP-J9-qG6"/>
+                                                <constraint firstItem="3r1-ea-eMv" firstAttribute="leading" secondItem="dTW-2A-zYf" secondAttribute="leading" constant="5" id="8fd-b3-fj1"/>
+                                                <constraint firstItem="yRw-do-ABV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dTW-2A-zYf" secondAttribute="leading" constant="50" id="A2G-wr-iPx"/>
+                                                <constraint firstItem="Lck-wO-F4R" firstAttribute="top" secondItem="dTW-2A-zYf" secondAttribute="top" constant="8" id="GJc-Vd-oiQ"/>
+                                                <constraint firstItem="Lck-wO-F4R" firstAttribute="leading" secondItem="dTW-2A-zYf" secondAttribute="leading" constant="8" id="KqW-hO-Vpe"/>
+                                                <constraint firstAttribute="bottom" secondItem="3r1-ea-eMv" secondAttribute="bottom" constant="5" id="TNh-QB-fS8"/>
+                                                <constraint firstAttribute="trailing" secondItem="yRw-do-ABV" secondAttribute="trailing" constant="8" id="bPg-v8-eYc"/>
+                                                <constraint firstItem="6ib-0b-4V6" firstAttribute="top" secondItem="dTW-2A-zYf" secondAttribute="top" constant="8" id="cYg-om-MY5"/>
+                                                <constraint firstAttribute="bottom" secondItem="yRw-do-ABV" secondAttribute="bottom" constant="8" id="nFf-9G-BIl"/>
+                                                <constraint firstAttribute="trailing" secondItem="6ib-0b-4V6" secondAttribute="trailing" constant="8" id="q7e-Yg-bQs"/>
+                                                <constraint firstAttribute="trailing" secondItem="3r1-ea-eMv" secondAttribute="trailing" constant="5" id="u8W-cZ-T4g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="yRw-do-ABV" id="0GT-g2-mxU"/>
+                                            <outlet property="previewImage" destination="3r1-ea-eMv" id="uVs-OP-cih"/>
+                                            <outlet property="usernameLabel" destination="Lck-wO-F4R" id="d02-cD-wxq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="IuS-jP-ZtW" id="brU-M2-6px"/>
+                                    <outlet property="delegate" destination="IuS-jP-ZtW" id="sSd-gb-XmP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UyF-mU-Cqn" firstAttribute="leading" secondItem="CKT-pz-wQP" secondAttribute="leading" id="Gb6-zb-T0E"/>
+                            <constraint firstItem="UyF-mU-Cqn" firstAttribute="top" secondItem="CKT-pz-wQP" secondAttribute="top" id="JPg-Ac-mMh"/>
+                            <constraint firstItem="Poa-Bs-V4h" firstAttribute="top" secondItem="UyF-mU-Cqn" secondAttribute="bottom" id="UlX-3h-UMY"/>
+                            <constraint firstAttribute="trailing" secondItem="UyF-mU-Cqn" secondAttribute="trailing" id="ppg-Fu-Pqc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="um6-AQ-FFm">
+                        <barButtonItem key="rightBarButtonItem" title="Create" id="H7T-Ol-tha">
+                            <connections>
+                                <segue destination="rDe-EE-Pyq" kind="presentation" identifier="ShowCreateTravel" id="ZuZ-sy-lvM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="travelListTable" destination="UyF-mU-Cqn" id="fRK-3w-8D8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjj-v5-lkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-10"/>
+        </scene>
+        <!--Create Travel View Controller-->
+        <scene sceneID="pnF-o4-CrR">
+            <objects>
+                <viewController storyboardIdentifier="CreateTravelViewController" id="z1K-ac-585" customClass="CreateTravelViewController" customModule="TripMo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fSR-Uz-LvI"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUZ-Xx-TPd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bCo-V3-9WD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GEz-It-TTu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z1K-ac-585" id="NeF-2N-HE1"/>
+                                    <outlet property="delegate" destination="z1K-ac-585" id="AjC-eq-y7f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GEz-It-TTu" firstAttribute="top" secondItem="bCo-V3-9WD" secondAttribute="top" id="J2a-ar-h1v"/>
+                            <constraint firstAttribute="trailing" secondItem="GEz-It-TTu" secondAttribute="trailing" id="NgK-De-J6v"/>
+                            <constraint firstItem="iUZ-Xx-TPd" firstAttribute="top" secondItem="GEz-It-TTu" secondAttribute="bottom" id="cqG-Ri-7Aq"/>
+                            <constraint firstItem="GEz-It-TTu" firstAttribute="leading" secondItem="bCo-V3-9WD" secondAttribute="leading" id="kib-Kg-Sde"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JUl-2W-jcF">
+                        <barButtonItem key="rightBarButtonItem" title="POST" id="S7w-Zg-uBR">
+                            <connections>
+                                <action selector="postTravelTapped:" destination="z1K-ac-585" id="5db-cz-2WK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="createTravelTable" destination="GEz-It-TTu" id="3K3-n9-vEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n9f-P3-NdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5999999999999" y="-10.344827586206897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vb1-7f-Pji">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VqT-Q0-gXe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LeI-7d-OQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IuS-jP-ZtW" kind="relationship" relationship="rootViewController" id="BvN-xH-fhZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lgj-sY-nb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="-10.344827586206897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="taV-B3-VIx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rDe-EE-Pyq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wdq-4A-VMw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z1K-ac-585" kind="relationship" relationship="rootViewController" id="hTR-41-Obb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTv-pE-5hz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256.8" y="-10.344827586206897"/>
+        </scene>
+    </scenes>
 </document>

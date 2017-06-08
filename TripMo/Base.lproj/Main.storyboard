@@ -263,11 +263,20 @@
                         <outlet property="regPassTF" destination="Sqv-5B-f9f" id="q4p-vb-FaX"/>
                         <outlet property="regUnameTF" destination="Zjl-lY-An6" id="mxg-jF-fG5"/>
                         <outlet property="registrationView" destination="VBD-8H-S15" id="FIN-WX-FIF"/>
+                        <segue destination="U2a-ay-KJD" kind="presentation" identifier="ShowTravelLogs" id="21k-rz-607"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-423" y="906"/>
+        </scene>
+        <!--TravelLogs-->
+        <scene sceneID="9Xm-a9-PHC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TravelLogs" id="U2a-ay-KJD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRC-BM-8eP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="328" y="906"/>
         </scene>
     </scenes>
 </document>

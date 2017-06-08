@@ -44,7 +44,9 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     @IBAction func loginTapped(_ sender: Any) {
         self.view.endEditing(true)
         
-        loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
+        self.performSegue(withIdentifier: "ShowTravelLogs", sender: self)
+        
+        //loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
     }
     
     /// Handle action from tapping create account button in login view.
