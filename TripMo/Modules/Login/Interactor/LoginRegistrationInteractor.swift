@@ -24,7 +24,7 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
     }
     
     /**
-        Perform Login or Registration process
+        Private interactor function to perform Login or Registration process
      
         Parameter username:   username input
         Parameter password:   password input
@@ -42,20 +42,20 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
                 return;
             }
             
+            
             DispatchQueue.main.async {
                 
-                let theUrl = URL(string: "realm://127.0.0.1:9080/~/\(username)/listings")!
+                let theUrl = URL(string: "realm://127.0.0.1:9080/~/\(username)/travels")!
                 
                 let configuration = Realm.Configuration(
                     syncConfiguration: SyncConfiguration(user: user, realmURL: theUrl)
                 )
-                self.realm = try! Realm(configuration: configuration)
                 
-                let permissionChange = SyncPermissionChange(realmURL: theUrl.absoluteString,    // The remote Realm URL on which to apply the changes
-                    userID: "*",       // The user ID for which these permission changes should be applied
-                    mayRead: true,     // Grant read access
-                    mayWrite: false,    // Grant write access
-                    mayManage: false)  // Grant management access
+                do {
+                    try RealmManager.sharedInstance.openSynchronizedRealmWith(configuration: configuration)
+                } catch let error {
+                    self.loginInteractorDelegate?.loginFailedWithError(errorText: error.localizedDescription, isRegister: isRegister)
+                }
                 
                 self.loginInteractorDelegate?.loginSuccessful()
             }

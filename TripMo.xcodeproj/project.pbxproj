@@ -34,6 +34,11 @@
 		00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD631EA478C9003C30D3 /* LoginViewController.swift */; };
 		00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD681EA478F6003C30D3 /* TripMo.xcdatamodeld */; };
 		00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */; };
+		00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88821EF8DE7A00137243 /* RealmManager.swift */; };
+		00DF88851EF919D100137243 /* TravelLogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88841EF919D100137243 /* TravelLogsPresenter.swift */; };
+		00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88861EF919E000137243 /* TravelLogsInteractor.swift */; };
+		00DF88891EF925E200137243 /* TravelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88881EF925E200137243 /* TravelsList.swift */; };
+		00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF888D1EFA12FE00137243 /* RealmManagerProtocols.swift */; };
 		4B9A8E9DF2CC92ACC0C9BCEC /* Pods_TripMo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F08C6FB94B93B8956F50335 /* Pods_TripMo.framework */; };
 		D4EC05680E841D205243799F /* Pods_TripMoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A19F0B0E0913898B14247 /* Pods_TripMoUITests.framework */; };
 		F1F67626013E97F9CB457054 /* Pods_TripMoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFC1527D4BE9B5272B9FF91 /* Pods_TripMoTests.framework */; };
@@ -90,6 +95,11 @@
 		00A6FD631EA478C9003C30D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		00A6FD691EA478F6003C30D3 /* TripMo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripMo.xcdatamodel; sourceTree = "<group>"; };
 		00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		00DF88821EF8DE7A00137243 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		00DF88841EF919D100137243 /* TravelLogsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsPresenter.swift; sourceTree = "<group>"; };
+		00DF88861EF919E000137243 /* TravelLogsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsInteractor.swift; sourceTree = "<group>"; };
+		00DF88881EF925E200137243 /* TravelsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelsList.swift; sourceTree = "<group>"; };
+		00DF888D1EFA12FE00137243 /* RealmManagerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManagerProtocols.swift; sourceTree = "<group>"; };
 		06BEDD41468ECA9E75EB0867 /* Pods-TripMo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.release.xcconfig"; sourceTree = "<group>"; };
 		138F5499562E9AECEB6005F1 /* Pods-TripMoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D8829F3C71164579171EAC4 /* Pods-TripMo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +142,7 @@
 		001977E31EE94E6800626323 /* RealmService */ = {
 			isa = PBXGroup;
 			children = (
+				00DF888A1EFA12DF00137243 /* Protocols */,
 				001977E41EE94E6800626323 /* RealmManager */,
 			);
 			path = RealmService;
@@ -140,6 +151,7 @@
 		001977E41EE94E6800626323 /* RealmManager */ = {
 			isa = PBXGroup;
 			children = (
+				00DF88821EF8DE7A00137243 /* RealmManager.swift */,
 			);
 			path = RealmManager;
 			sourceTree = "<group>";
@@ -159,6 +171,7 @@
 		001977E61EE94EAC00626323 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				00DF88881EF925E200137243 /* TravelsList.swift */,
 				001977F91EE956AA00626323 /* Travel.swift */,
 				001977FB1EE9574600626323 /* Amenities.swift */,
 				001977FD1EE959D700626323 /* ContactPerson.swift */,
@@ -169,6 +182,7 @@
 		001977E71EE94EAC00626323 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				00DF88861EF919E000137243 /* TravelLogsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -176,6 +190,7 @@
 		001977E81EE94EAC00626323 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				00DF88841EF919D100137243 /* TravelLogsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -506,6 +521,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		00DF888A1EFA12DF00137243 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				00DF888D1EFA12FE00137243 /* RealmManagerProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		36BBFC1BFD44B61545EE2D0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,12 +839,16 @@
 				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
 				001977FE1EE959D700626323 /* ContactPerson.swift in Sources */,
 				0019780D1EE965E600626323 /* LocationSearchCell.swift in Sources */,
+				00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */,
 				001977F41EE9535D00626323 /* TravelListProtocols.swift in Sources */,
 				001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */,
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
+				00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */,
 				001977F21EE9518500626323 /* TravelListCell.swift in Sources */,
 				007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */,
 				001977EF1EE94F9E00626323 /* TravelLogsViewController.swift in Sources */,
+				00DF88851EF919D100137243 /* TravelLogsPresenter.swift in Sources */,
+				00DF88891EF925E200137243 /* TravelsList.swift in Sources */,
 				007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */,
 				001978091EE9640F00626323 /* CreateTravelViewController.swift in Sources */,
 				007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */,
@@ -830,6 +857,7 @@
 				001977FA1EE956AA00626323 /* Travel.swift in Sources */,
 				001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */,
 				007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */,
+				00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */,
 				001977FC1EE9574600626323 /* Amenities.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
 			);

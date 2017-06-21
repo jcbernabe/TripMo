@@ -8,14 +8,16 @@
 
 import UIKit
 
-class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,TravelLogsPresenterDelegate {
 
     @IBOutlet weak var travelListTable: UITableView!
     
+    let travelLogsPresenter = TravelLogsPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        travelLogsPresenter.handleFetchTravelLogs()
     }
 
 // MARK: - UITableView Data Source

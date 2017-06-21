@@ -44,9 +44,7 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     @IBAction func loginTapped(_ sender: Any) {
         self.view.endEditing(true)
         
-        self.performSegue(withIdentifier: "ShowTravelLogs", sender: self)
-        
-        //loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
+        loginPresenter.handleLoginWith(username: loginUnameTF.text!, password: loginPassTF.text!)
     }
     
     /// Handle action from tapping create account button in login view.
@@ -94,8 +92,7 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     func showLoginRegistrationSuccessfulTransition() {
         
         DispatchQueue.main.async {
-            let alertController = UIAlertController(title: "YEAH!", message: "Login Success", preferredStyle: .alert)
-            self.present(alertController, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "ShowTravelLogs", sender: self)
         }
     }
     
@@ -107,6 +104,11 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
     
 // MARK: - Confirm Password
     
+    /**
+        Function to check if password and confirm password fields have the same value
+     
+        - Returns: *true* if passwords match and *false* if passwords don't match
+     */
     func confirmPassword() -> Bool {
         
         if regPassTF.text! != regConfirmPassTF.text! {
