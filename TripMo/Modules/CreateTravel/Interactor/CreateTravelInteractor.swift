@@ -9,11 +9,15 @@
 import Foundation
 import RealmSwift
 
-class CreateTravelInteractor: NSObject, CreateTravelPresenterInterface {
+class CreateTravelInteractor: NSObject, CreateTravelInteractorInterface {
     
-    weak var createTravelPresenterDelegate: CreateTravelPresenterDelegate?
+    weak var createTravelInteractorDelegate: CreateTravelInteractorDelegate?
     
     var realm: Realm?
+    
+    func createTravelPost(data: Travel) {
+        postTravel()
+    }
     
     private func postTravel() {
         let newTravelLog = Travel()
@@ -37,6 +41,21 @@ class CreateTravelInteractor: NSObject, CreateTravelPresenterInterface {
         
         newTravelLog.dateOfTravel = NSDate()
         
+        
+        realm = RealmManager.sharedInstance.globalRealm
+        
+        do {
+            try realm?.write {
+                realm?.add(newTravelLog)
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
     }
     
 }
+
+
+
+

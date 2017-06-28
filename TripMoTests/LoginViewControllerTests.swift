@@ -18,17 +18,30 @@ class LoginViewControllerTests: QuickSpec {
         describe("Login View Controller") {
             
             var loginVC: LoginViewController!
+            var storyboard: UIStoryboard!
             
             beforeEach {
-                loginVC = LoginViewController()
-                loginVC.regPassTF.text = "test"
-                loginVC.regConfirmPassTF.text = "test"
+                storyboard = UIStoryboard(name: "Login", bundle: nil)
+                
+                loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                let _ = loginVC.view
+                
             }
             
-            it("confirms password") {
-                let passwordMatch = loginVC.confirmPassword()
+            it("confirms password match") {
+                loginVC.regPassTF.text = "test"
+                loginVC.regConfirmPassTF.text = "test"
                 
+                let passwordMatch = loginVC.confirmPassword()
                 expect(passwordMatch).to(beTrue())
+            }
+            
+            it("confirms password don't match") {
+                loginVC.regPassTF.text = "test"
+                loginVC.regConfirmPassTF.text = "testy"
+                
+                let passwordMatch = loginVC.confirmPassword()
+                expect(passwordMatch).to(beFalse())
             }
             
         }

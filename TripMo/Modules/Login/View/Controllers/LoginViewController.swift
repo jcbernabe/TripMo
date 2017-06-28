@@ -36,6 +36,7 @@ class LoginViewController: UIViewController, LoginPresenterDelegate {
         super.viewDidLoad()
 
         loginPresenter.loginPresenterDelegate = self
+        loginPresenter.handleLoginWith(username: "testuserfour", password: "testuserfour")
     }
     
 // MARK: - IBAction Selector Methods - Login

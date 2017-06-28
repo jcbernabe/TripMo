@@ -15,21 +15,23 @@ class TravelLogsInteractor: NSObject, TravelLogsInteractorInterface {
     
     var realm: Realm!
     
-    var travelLogs = List<Travel>()
+    var travelLogs: Results<Travel>?
     
     func fetchTravelLogs() {
         
         self.realm = RealmManager.sharedInstance.globalRealm
         
-        guard let results = self.realm.objects(TravelsList.self).first  else {
-            print("There are no travel logs")
-            return
-        }
+//        guard let results = self.realm.objects(Travel.self) else {
+//            print("There are no travel logs")
+//            return
+//        }
+        
+        let results = self.realm.objects(Travel.self)
         
         print(results)
-        self.travelLogs = results.travels
+        self.travelLogs = results
      
-//        self.travelLogsInteractorDelegate?.fetchTravelLogsSuccessful()
+        self.travelLogsInteractorDelegate?.fetchTravelLogsSuccessful(items: self.travelLogs!)
 //        self.travelLogsInteractorDelegate?.fetchTravelLogsFailedWithErrors(error: Error())
         
     }

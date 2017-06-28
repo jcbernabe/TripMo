@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-/// Travel Logs interactor methods and variables
+/// Travel Logs interactor functions and variables
 protocol TravelLogsInteractorInterface {
     
     /**
@@ -22,45 +23,64 @@ protocol TravelLogsInteractorInterface {
     func fetchTravelLogs()
 }
 
-/// Travel Logs interactor delegate or output methods
+/// Travel Logs interactor delegate or output functions
 protocol TravelLogsInteractorDelegate: class {
     
     /**
         Interactor delegate to execute if fetching travel logs is successful.
      */
-    func fetchTravelLogsSuccessful()
+    func fetchTravelLogsSuccessful(items: Results<Travel>)
     
     /**
         Interactor delegate to execute if fetching travel logs failed.
      
-        - Parameter error: Fetch failed errors.
+        - Parameter error: Fetch failed error description.
      */
     func fetchTravelLogsFailedWithErrors(error: Error)
     
 }
 
-/// Travel Logs presenter methods and variables
+/// Travel Logs presenter functions and variables
 protocol TravelLogsPresenterInterface {
     
+    /**
+        Presenter delegate varaible
+     */
     weak var travelLogsPresenterDelegate: TravelLogsPresenterDelegate? {get set}
     
+    /**
+        Presenter function to handle fetching of all travel logs.
+     */
     func handleFetchTravelLogs()
 }
 
-/// Travel Logs presenter delegate or output methods
+/// Travel Logs presenter delegate or output functions
 protocol TravelLogsPresenterDelegate: class {
     
+    /**
+        Presenter delegate function to execute on View Controller for presenting fetched data.
+        - Parameter items: *Array* of **TravelListCellViewModel** object containing details of each travel logs.
+     */
+    func presentTravelLogsData(items: Array<TravelListCellViewModel>)
+    
 }
 
-// MARK: - Travel List Cell Interface
-
+/// Travel List Cell Interface
 protocol TravelListCellInterface {
     
+    /**
+        Travel List Cell delegate varaible
+     */
     weak var travelListCellDelegate: TravelListCellDelegate? {get set}
     
-    func initWithTravelData()
+    /**
+        Travel List Cell data initializer method.
+        - Parameter data: *TravelListCellViewModel* object that contains all details needed to populate view objects with necessary data.
+    */
+    func initWithTravelData(data: TravelListCellViewModel)
 }
 
+/// Travel List Cell delegate functions
 protocol TravelListCellDelegate: class {
     
 }

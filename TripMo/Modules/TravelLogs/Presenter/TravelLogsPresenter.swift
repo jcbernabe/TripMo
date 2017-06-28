@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TravelLogsPresenter: NSObject, TravelLogsPresenterInterface, TravelLogsInteractorDelegate {
     
@@ -26,8 +27,16 @@ class TravelLogsPresenter: NSObject, TravelLogsPresenterInterface, TravelLogsInt
     
 // MARK: - Travel Logs Interactor Delegates
     
-    func fetchTravelLogsSuccessful() {
+    func fetchTravelLogsSuccessful(items: Results<Travel>) {
         
+        var viewModelArray = [TravelListCellViewModel]()
+        
+        for travel in items {
+            let travelLogViewModel = TravelListCellViewModel(travelData: travel)
+            viewModelArray.append(travelLogViewModel)
+        }
+        
+        self.travelLogsPresenterDelegate?.presentTravelLogsData(items: viewModelArray)
     }
     
     func fetchTravelLogsFailedWithErrors(error: Error) {

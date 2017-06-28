@@ -8,22 +8,23 @@
 
 import UIKit
 
-class TravelListCell: UITableViewCell {
+class TravelListCell: UITableViewCell, TravelListCellInterface {
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     @IBOutlet weak var previewImage: UIImageView!
     
+    weak var travelListCellDelegate: TravelListCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func initWithTravelData(data: TravelListCellViewModel) {
+        self.usernameLabel.text = data.username
+        self.descriptionLabel.text = data.travelDescription
     }
 
 }

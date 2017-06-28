@@ -12,6 +12,19 @@ class CreateTravelPresenter: NSObject, CreateTravelPresenterInterface, CreateTra
     
     weak var createTravelPresenterDelegate: CreateTravelPresenterDelegate?
     
+    let createTravelInteractor = CreateTravelInteractor()
+    
+    override init() {
+        super.init()
+        
+        self.createTravelInteractor.createTravelInteractorDelegate = self
+    }
+    
+// MARK: - Handle Travel Post Creation
+    func handleCreatingTravelPost(data: Travel) {
+        createTravelInteractor.createTravelPost(data: data)
+    }
+    
 // MARK: - Create Travel Interactor Delegate Methods
     func postSuccessful() {
         

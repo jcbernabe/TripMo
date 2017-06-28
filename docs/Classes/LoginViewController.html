@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LoginViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LoginViewController" class="dashAnchor"></a>
+    <a title="LoginViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (41% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LoginViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Amenities.html">Amenities</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ContactPerson.html">ContactPerson</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTravelInteractor.html">CreateTravelInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTravelPresenter.html">CreateTravelPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreateTravelViewController.html">CreateTravelViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationSearchCell.html">LocationSearchCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoginPresenter.html">LoginPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoginRegistrationInteractor.html">LoginRegistrationInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoginViewController.html">LoginViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C6TripMo21MultipleSelectionCell">MultipleSelectionCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C6TripMo10PhotosCell">PhotosCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RealmManager.html">RealmManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C6TripMo13TextFieldCell">TextFieldCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Travel.html">Travel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TravelListCell.html">TravelListCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TravelLogsInteractor.html">TravelLogsInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TravelLogsPresenter.html">TravelLogsPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TravelLogsViewController.html">TravelLogsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TravelsList.html">TravelsList</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HouseAmenities.html">HouseAmenities</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P6TripMo24CreateTravelCellDelegate">CreateTravelCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreateTravelCellInterface.html">CreateTravelCellInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreateTravelInteractorDelegate.html">CreateTravelInteractorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreateTravelInteractorInterface.html">CreateTravelInteractorInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreateTravelPresenterDelegate.html">CreateTravelPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreateTravelPresenterInterface.html">CreateTravelPresenterInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LoginInteractorDelegate.html">LoginInteractorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LoginPresenterDelegate.html">LoginPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LoginPresenterInterface.html">LoginPresenterInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LoginRegistrationInteractorInterface.html">LoginRegistrationInteractorInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RealmManagerInterface.html">RealmManagerInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:P6TripMo22TravelListCellDelegate">TravelListCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TravelListCellInterface.html">TravelListCellInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TravelLogsInteractorDelegate.html">TravelLogsInteractorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TravelLogsInteractorInterface.html">TravelLogsInteractorInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TravelLogsPresenterDelegate.html">TravelLogsPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TravelLogsPresenterInterface.html">TravelLogsPresenterInterface</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/TravelListCellViewModel.html">TravelListCellViewModel</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LoginViewController</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Login%20Views%20Outlet"></a>
+                <a name="//apple_ref/swift/Section/Login Views Outlet" class="dashAnchor"></a>
+                <a href="#/Login%20Views%20Outlet">
+                  <h3 class="section-name">Login Views Outlet</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController9loginViewXwGSQCSo6UIView_"></a>
+                    <a name="//apple_ref/swift/Property/loginView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController9loginViewXwGSQCSo6UIView_">loginView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController12loginUnameTFXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/loginUnameTF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController12loginUnameTFXwGSQCSo11UITextField_">loginUnameTF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController11loginPassTFXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/loginPassTF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController11loginPassTFXwGSQCSo11UITextField_">loginPassTF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController8loginBtnXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/loginBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController8loginBtnXwGSQCSo8UIButton_">loginBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController13createAcctBtnXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/createAcctBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController13createAcctBtnXwGSQCSo8UIButton_">createAcctBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController13forgotPassBtnXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/forgotPassBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController13forgotPassBtnXwGSQCSo8UIButton_">forgotPassBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Registration%20Views%20Outlet"></a>
+                <a name="//apple_ref/swift/Section/Registration Views Outlet" class="dashAnchor"></a>
+                <a href="#/Registration%20Views%20Outlet">
+                  <h3 class="section-name">Registration Views Outlet</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController16registrationViewXwGSQCSo6UIView_"></a>
+                    <a name="//apple_ref/swift/Property/registrationView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController16registrationViewXwGSQCSo6UIView_">registrationView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController10regUnameTFXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/regUnameTF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController10regUnameTFXwGSQCSo11UITextField_">regUnameTF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController9regPassTFXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/regPassTF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController9regPassTFXwGSQCSo11UITextField_">regPassTF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController16regConfirmPassTFXwGSQCSo11UITextField_"></a>
+                    <a name="//apple_ref/swift/Property/regConfirmPassTF" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController16regConfirmPassTFXwGSQCSo11UITextField_">regConfirmPassTF</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController12regCreateBtnXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/regCreateBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController12regCreateBtnXwGSQCSo8UIButton_">regCreateBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController9cancelBtnXwGSQCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/cancelBtn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController9cancelBtnXwGSQCSo8UIButton_">cancelBtn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC6TripMo19LoginViewController14loginPresenterCS_14LoginPresenter"></a>
+                    <a name="//apple_ref/swift/Property/loginPresenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC6TripMo19LoginViewController14loginPresenterCS_14LoginPresenter">loginPresenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/View%20Loaders"></a>
+                <a name="//apple_ref/swift/Section/View Loaders" class="dashAnchor"></a>
+                <a href="#/View%20Loaders">
+                  <h3 class="section-name">View Loaders</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController11viewDidLoadFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController11viewDidLoadFT_T_">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IBAction%20Selector%20Methods%20-%20Login"></a>
+                <a name="//apple_ref/swift/Section/IBAction Selector Methods - Login" class="dashAnchor"></a>
+                <a href="#/IBAction%20Selector%20Methods%20-%20Login">
+                  <h3 class="section-name">IBAction Selector Methods - Login</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController11loginTappedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/loginTapped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController11loginTappedFP_T_">loginTapped(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle action from tapping login button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">loginTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController21loginCreateAcctTappedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/loginCreateAcctTapped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController21loginCreateAcctTappedFP_T_">loginCreateAcctTapped(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle action from tapping create account button in login view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">loginCreateAcctTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController16forgotPassTappedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/forgotPassTapped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController16forgotPassTappedFP_T_">forgotPassTapped(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle action from tapping forgot password button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">forgotPassTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IBAction%20Selector%20Methods%20-%20Registration"></a>
+                <a name="//apple_ref/swift/Section/IBAction Selector Methods - Registration" class="dashAnchor"></a>
+                <a href="#/IBAction%20Selector%20Methods%20-%20Registration">
+                  <h3 class="section-name">IBAction Selector Methods - Registration</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController28registrationCreateAcctTappedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/registrationCreateAcctTapped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController28registrationCreateAcctTappedFP_T_">registrationCreateAcctTapped(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle action from tapping create account button in registration view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">registrationCreateAcctTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController12cancelTappedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/cancelTapped(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController12cancelTappedFP_T_">cancelTapped(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handle action from tapping cancel button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">cancelTapped</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Login%20Presenter%20Delegates"></a>
+                <a name="//apple_ref/swift/Section/Login Presenter Delegates" class="dashAnchor"></a>
+                <a href="#/Login%20Presenter%20Delegates">
+                  <h3 class="section-name">Login Presenter Delegates</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP6TripMo22LoginPresenterDelegate41showLoginRegistrationSuccessfulTransitionFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/showLoginRegistrationSuccessfulTransition()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP6TripMo22LoginPresenterDelegate41showLoginRegistrationSuccessfulTransitionFT_T_">showLoginRegistrationSuccessfulTransition()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">showLoginRegistrationSuccessfulTransition</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP6TripMo22LoginPresenterDelegate31showLoginRegistrationErrorAlertFT5alertCSo17UIAlertController_T_"></a>
+                    <a name="//apple_ref/swift/Method/showLoginRegistrationErrorAlert(alert:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP6TripMo22LoginPresenterDelegate31showLoginRegistrationErrorAlertFT5alertCSo17UIAlertController_T_">showLoginRegistrationErrorAlert(alert:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">showLoginRegistrationErrorAlert</span><span class="p">(</span><span class="nv">alert</span><span class="p">:</span> <span class="kt">UIAlertController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Confirm%20Password"></a>
+                <a name="//apple_ref/swift/Section/Confirm Password" class="dashAnchor"></a>
+                <a href="#/Confirm%20Password">
+                  <h3 class="section-name">Confirm Password</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC6TripMo19LoginViewController15confirmPasswordFT_Sb"></a>
+                    <a name="//apple_ref/swift/Method/confirmPassword()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC6TripMo19LoginViewController15confirmPasswordFT_Sb">confirmPassword()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Function to check if password and confirm password fields have the same value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">confirmPassword</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><em>true</em> if passwords match and <em>false</em> if passwords don&rsquo;t match</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-06-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

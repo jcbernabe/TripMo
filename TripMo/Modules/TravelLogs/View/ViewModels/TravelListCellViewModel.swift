@@ -10,8 +10,16 @@ import Foundation
 
 struct TravelListCellViewModel {
     
-    var usernameText: String {
-        return "test username"
+    let travelData: Travel
+    
+    let username: String
+    let travelDescription: String
+    
+    init(travelData: Travel) {
+        self.travelData = travelData
+        
+        self.username = travelData.username
+        self.travelDescription = travelData.travelDescription
     }
     
 }

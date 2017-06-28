@@ -20,12 +20,18 @@
 		001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019780F1EE96B4400626323 /* CreateTravelProtocols.swift */; };
 		001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978111EE96B5600626323 /* CreateTravelInteractor.swift */; };
 		001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978131EE96B6000626323 /* CreateTravelPresenter.swift */; };
+		00246BCB1F03837400A69ACD /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246BCA1F03837400A69ACD /* TextFieldCell.swift */; };
+		00246BCD1F03837C00A69ACD /* TextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00246BCC1F03837C00A69ACD /* TextFieldCell.xib */; };
+		00246BCF1F03838700A69ACD /* MultipleSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246BCE1F03838700A69ACD /* MultipleSelectionCell.swift */; };
+		00246BD11F03838D00A69ACD /* MultipleSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00246BD01F03838D00A69ACD /* MultipleSelectionCell.xib */; };
+		00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246BD21F03839A00A69ACD /* PhotosCell.swift */; };
+		00246BD51F0383A000A69ACD /* PhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00246BD41F0383A000A69ACD /* PhotosCell.xib */; };
 		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
 		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
 		007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */; };
 		007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */; };
 		007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC021EE18B0400B6F06E /* LoginProtocols.swift */; };
-		00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Main.storyboard */; };
+		00A6FD2E1EA46414003C30D3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Login.storyboard */; };
 		00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD321EA46414003C30D3 /* Assets.xcassets */; };
 		00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */; };
 		00A6FD411EA46414003C30D3 /* TripMoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD401EA46414003C30D3 /* TripMoTests.swift */; };
@@ -39,6 +45,7 @@
 		00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88861EF919E000137243 /* TravelLogsInteractor.swift */; };
 		00DF88891EF925E200137243 /* TravelsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88881EF925E200137243 /* TravelsList.swift */; };
 		00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF888D1EFA12FE00137243 /* RealmManagerProtocols.swift */; };
+		00DF88901EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF888F1EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift */; };
 		4B9A8E9DF2CC92ACC0C9BCEC /* Pods_TripMo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F08C6FB94B93B8956F50335 /* Pods_TripMo.framework */; };
 		D4EC05680E841D205243799F /* Pods_TripMoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A19F0B0E0913898B14247 /* Pods_TripMoUITests.framework */; };
 		F1F67626013E97F9CB457054 /* Pods_TripMoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFC1527D4BE9B5272B9FF91 /* Pods_TripMoTests.framework */; };
@@ -75,13 +82,19 @@
 		0019780F1EE96B4400626323 /* CreateTravelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelProtocols.swift; sourceTree = "<group>"; };
 		001978111EE96B5600626323 /* CreateTravelInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelInteractor.swift; sourceTree = "<group>"; };
 		001978131EE96B6000626323 /* CreateTravelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelPresenter.swift; sourceTree = "<group>"; };
+		00246BCA1F03837400A69ACD /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		00246BCC1F03837C00A69ACD /* TextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldCell.xib; sourceTree = "<group>"; };
+		00246BCE1F03838700A69ACD /* MultipleSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleSelectionCell.swift; sourceTree = "<group>"; };
+		00246BD01F03838D00A69ACD /* MultipleSelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleSelectionCell.xib; sourceTree = "<group>"; };
+		00246BD21F03839A00A69ACD /* PhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
+		00246BD41F0383A000A69ACD /* PhotosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosCell.xib; sourceTree = "<group>"; };
 		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
 		007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractor.swift; sourceTree = "<group>"; };
 		007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		007CDC021EE18B0400B6F06E /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		00A6FD251EA46414003C30D3 /* TripMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00A6FD2D1EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00A6FD2D1EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		00A6FD321EA46414003C30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00A6FD351EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A6FD371EA46414003C30D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +113,7 @@
 		00DF88861EF919E000137243 /* TravelLogsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsInteractor.swift; sourceTree = "<group>"; };
 		00DF88881EF925E200137243 /* TravelsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelsList.swift; sourceTree = "<group>"; };
 		00DF888D1EFA12FE00137243 /* RealmManagerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManagerProtocols.swift; sourceTree = "<group>"; };
+		00DF888F1EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractorTests.swift; sourceTree = "<group>"; };
 		06BEDD41468ECA9E75EB0867 /* Pods-TripMo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.release.xcconfig"; sourceTree = "<group>"; };
 		138F5499562E9AECEB6005F1 /* Pods-TripMoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMoUITests/Pods-TripMoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D8829F3C71164579171EAC4 /* Pods-TripMo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMo/Pods-TripMo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +340,12 @@
 			children = (
 				0019780B1EE965E600626323 /* LocationSearchCell.swift */,
 				0019780C1EE965E600626323 /* LocationSearchCell.xib */,
+				00246BCA1F03837400A69ACD /* TextFieldCell.swift */,
+				00246BCC1F03837C00A69ACD /* TextFieldCell.xib */,
+				00246BCE1F03838700A69ACD /* MultipleSelectionCell.swift */,
+				00246BD01F03838D00A69ACD /* MultipleSelectionCell.xib */,
+				00246BD21F03839A00A69ACD /* PhotosCell.swift */,
+				00246BD41F0383A000A69ACD /* PhotosCell.xib */,
 			);
 			path = CreateTravelCells;
 			sourceTree = "<group>";
@@ -395,6 +415,7 @@
 			children = (
 				00A6FD401EA46414003C30D3 /* TripMoTests.swift */,
 				00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */,
+				00DF888F1EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift */,
 				00A6FD421EA46414003C30D3 /* Info.plist */,
 			);
 			path = TripMoTests;
@@ -506,7 +527,7 @@
 		00A6FD6B1EA47910003C30D3 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				00A6FD2C1EA46414003C30D3 /* Main.storyboard */,
+				00A6FD2C1EA46414003C30D3 /* Login.storyboard */,
 				007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */,
 				00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */,
 			);
@@ -669,11 +690,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00246BD11F03838D00A69ACD /* MultipleSelectionCell.xib in Resources */,
 				00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */,
 				0019780E1EE965E600626323 /* LocationSearchCell.xib in Resources */,
 				00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */,
-				00A6FD2E1EA46414003C30D3 /* Main.storyboard in Resources */,
+				00246BD51F0383A000A69ACD /* PhotosCell.xib in Resources */,
+				00A6FD2E1EA46414003C30D3 /* Login.storyboard in Resources */,
 				007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */,
+				00246BCD1F03837C00A69ACD /* TextFieldCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +870,7 @@
 				00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */,
 				001977F21EE9518500626323 /* TravelListCell.swift in Sources */,
 				007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */,
+				00246BCF1F03838700A69ACD /* MultipleSelectionCell.swift in Sources */,
 				001977EF1EE94F9E00626323 /* TravelLogsViewController.swift in Sources */,
 				00DF88851EF919D100137243 /* TravelLogsPresenter.swift in Sources */,
 				00DF88891EF925E200137243 /* TravelsList.swift in Sources */,
@@ -855,11 +880,13 @@
 				001977F81EE953D000626323 /* TravelListCellViewModel.swift in Sources */,
 				001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */,
 				001977FA1EE956AA00626323 /* Travel.swift in Sources */,
+				00246BCB1F03837400A69ACD /* TextFieldCell.swift in Sources */,
 				001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */,
 				007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */,
 				00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */,
 				001977FC1EE9574600626323 /* Amenities.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
+				00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +894,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DF88901EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift in Sources */,
 				00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */,
 				00A6FD411EA46414003C30D3 /* TripMoTests.swift in Sources */,
 			);
@@ -904,12 +932,12 @@
 			name = TravelLogs.storyboard;
 			sourceTree = "<group>";
 		};
-		00A6FD2C1EA46414003C30D3 /* Main.storyboard */ = {
+		00A6FD2C1EA46414003C30D3 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				00A6FD2D1EA46414003C30D3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */ = {

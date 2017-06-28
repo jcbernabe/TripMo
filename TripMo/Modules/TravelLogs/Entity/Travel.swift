@@ -36,4 +36,6 @@ class Travel: Object {
     
     dynamic var additionalComments: String = ""
     
+    dynamic var isFavorite: Bool = false
+    
 }

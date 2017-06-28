@@ -23,7 +23,7 @@ class CreateTravelViewController: UIViewController, UITableViewDelegate, UITable
 // MARK: - Post Travel Tapped
     
     @IBAction func postTravelTapped(_ sender: Any) {
-        
+        createTravelPresenter.handleCreatingTravelPost(data: Travel())
     }
     
 // MARK: - Create Travel Presenter Delegate Methods
@@ -63,7 +63,7 @@ class CreateTravelViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TravelListCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         return cell;
     }

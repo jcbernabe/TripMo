@@ -14,10 +14,20 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     let travelLogsPresenter = TravelLogsPresenter()
     
+    var travelData: Array<TravelListCellViewModel> = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        travelLogsPresenter.travelLogsPresenterDelegate = self;
         travelLogsPresenter.handleFetchTravelLogs()
+    }
+    
+// MARK: - Travel Logs Presenter Delegates
+    
+    func presentTravelLogsData(items: Array<TravelListCellViewModel>) {
+        self.travelData = items;
+        self.travelListTable.reloadData()
     }
 
 // MARK: - UITableView Data Source
@@ -27,11 +37,13 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.travelData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TravelListCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TravelListCell", for: indexPath) as! TravelListCell
+        
+        cell.initWithTravelData(data: self.travelData[indexPath.row])
         
         return cell;
     }

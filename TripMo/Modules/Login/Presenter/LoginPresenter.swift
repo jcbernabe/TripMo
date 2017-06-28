@@ -8,6 +8,12 @@
 
 import UIKit
 
+/**
+    Login Presenter Class
+ 
+    - Pass all user inputted data from View Controller to Login Interactor.
+    - Process all needed outputs(ex. *UIAlertController*..).
+ */
 class LoginPresenter: NSObject, LoginInteractorDelegate, LoginPresenterInterface {
 
     weak var loginPresenterDelegate: LoginPresenterDelegate?
