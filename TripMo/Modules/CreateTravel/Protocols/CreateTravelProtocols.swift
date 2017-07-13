@@ -79,9 +79,63 @@ protocol CreateTravelCellInterface {
      */
     weak var createTravelCellDelegate: CreateTravelCellDelegate? {get set}
     
+    //func initCreateTravelCell(atIndex: IndexPath)
+    
 }
 
 /// Create Travel cells delegate functions
 protocol CreateTravelCellDelegate: class {
     
 }
+
+/// Location cell data source functions
+protocol LocationCellDataSource: class {
+    
+    /**
+        Data source function for getting location cell data.
+        - Returns: Location name
+     */
+    func locationCellData() -> String
+}
+
+/// Accomodation cell data source functions
+protocol AccomodationCellDataSource: class {
+    
+    /**
+        Data source function for getting accomodation cell data.
+        - Returns: A *tuple* with name, amenities and activities.
+     */
+    func accomodationCellData() -> (name: String, amenities: String, activities: String)
+}
+
+/// Photos cell data source functions
+protocol PhotosCellDataSource: class {
+    
+    /**
+        Data source function for getting photo cell data.
+        - Returns: An *array* of ***UIImage*** objects
+     */
+    func photosCellData() -> [UIImage]
+}
+
+/// Contact person cell data source functions
+protocol ContactPersonCellDataSource: class {
+    
+    /**
+        Data source function for getting contact person cell data.
+        - Returns: A **ContactPerson** object
+     */
+    func contactPersonCellData() -> ContactPerson
+}
+
+/// Other details cell data source functions
+protocol OtherDetailsCellDataSource: class {
+    /**
+        Data source function for getting contact person cell data.
+        - Returns: A *tuple* with travelDate, offSeasonStart, offSeasonEnd, peakSeasonStart, peakSeasonEnd and comments.
+     */
+    func otherDetailsCellData() -> (travelDate: Date, offSeasonStart: Date, offSeasonEnd: Date, peakSeasonStart: Date, peakSeasonEnd: Date, comments: String)
+}
+
+
+

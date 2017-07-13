@@ -8,17 +8,25 @@
 
 import UIKit
 
-class LocationSearchCell: UITableViewCell {
+class LocationSearchCell: UITableViewCell, CreateTravelCellInterface, LocationCellDataSource {
 
+    weak var createTravelCellDelegate: CreateTravelCellDelegate?
+    
+    @IBOutlet weak var locationField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+// MARK: - Create necessary cell objects
+    func initCreateTravelCell(atIndex: IndexPath) {
+        
+    }
+    
+// MARK: - Location Data Source
+    func locationCellData() -> String {
+        return self.locationField.text!
     }
     
 }

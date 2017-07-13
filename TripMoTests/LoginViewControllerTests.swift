@@ -28,22 +28,77 @@ class LoginViewControllerTests: QuickSpec {
                 
             }
             
-            it("confirms password match") {
-                loginVC.regPassTF.text = "test"
-                loginVC.regConfirmPassTF.text = "test"
+            describe("registration password matching") {
                 
-                let passwordMatch = loginVC.confirmPassword()
-                expect(passwordMatch).to(beTrue())
+                beforeEach {
+                    loginVC.regPassTF.text = ""
+                    loginVC.regConfirmPassTF.text = ""
+                }
+                
+                it("matches") {
+                    loginVC.regPassTF.text = "test"
+                    loginVC.regConfirmPassTF.text = "test"
+                    
+                    let passwordMatch = loginVC.confirmPassword()
+                    expect(passwordMatch).to(beTrue())
+                }
+                
+                it("does not match") {
+                    loginVC.regPassTF.text = "test"
+                    loginVC.regConfirmPassTF.text = "testy"
+                    
+                    let passwordMatch = loginVC.confirmPassword()
+                    expect(passwordMatch).to(beFalse())
+                }
             }
             
-            it("confirms password don't match") {
-                loginVC.regPassTF.text = "test"
-                loginVC.regConfirmPassTF.text = "testy"
+            
+            describe("Login Process") {
                 
-                let passwordMatch = loginVC.confirmPassword()
-                expect(passwordMatch).to(beFalse())
+                let loginPrenster = MockLoginPresenter()
+          
+                it("logins successfully") {
+                    loginPrenster.handleLoginWith(username: "test", password: "test")
+                    
+                    expect(loginPrenster.loginSuccess).to(beTrue())
+                }
+                
+                it("fails login process") {
+                    loginPrenster.handleLoginWith(username: "test", password: "testing")
+                    
+                    expect(loginPrenster.loginSuccess).to(beFalse())
+                }
             }
             
         }
     }
 }
+
+class MockLoginPresenter: LoginPresenterInterface, LoginInteractorDelegate {
+    
+    weak var loginPresenterDelegate: LoginPresenterDelegate?
+    
+    let loginInteractor = MockLoginInteractor()
+    var loginSuccess = false
+    
+    func handleLoginWith(username: String, password: String) {
+        loginInteractor.loginInteractorDelegate = self
+        
+        loginInteractor.loginUserWith(username: username, password: password)
+    }
+    
+    func handleRegistrationWith(username: String, password: String) {
+        loginInteractor.loginInteractorDelegate = self
+        
+        loginInteractor.registerUserWith(username: username, password: password)
+    }
+    
+    func loginSuccessful() {
+        loginSuccess = true
+    }
+    
+    func loginFailedWithError(errorText: String, isRegister: Bool) {
+        loginSuccess = false
+    }
+}
+

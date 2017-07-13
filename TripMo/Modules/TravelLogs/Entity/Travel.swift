@@ -17,8 +17,7 @@ class Travel: Object {
     dynamic var location: String = ""
     
     dynamic var accomodationName: String = ""
-    dynamic var houseAmenities: String = ""
-    dynamic var resortAmenities: String = ""
+    dynamic var amenities: String = ""
     
     dynamic var activities: String = ""
     
@@ -26,13 +25,13 @@ class Travel: Object {
     
     dynamic var contactPerson: ContactPerson?
     
-    dynamic var dateOfTravel = NSDate()
+    dynamic var dateOfTravel = Date()
     
-    dynamic var offSeasonDateStart = NSDate()
-    dynamic var offSeasonDateFinish = NSDate()
+    dynamic var offSeasonDateStart = Date()
+    dynamic var offSeasonDateFinish = Date()
     
-    dynamic var peakSeasonDateStart = NSDate()
-    dynamic var peakSeasonDateFinish = NSDate()
+    dynamic var peakSeasonDateStart = Date()
+    dynamic var peakSeasonDateFinish = Date()
     
     dynamic var additionalComments: String = ""
     

@@ -9,6 +9,7 @@
 import XCTest
 import Quick
 import Nimble
+import RealmSwift
 @testable import TripMo
 
 class LoginRegistrationInteractorTests: QuickSpec {
@@ -20,8 +21,11 @@ class LoginRegistrationInteractorTests: QuickSpec {
             let username = "test"
             let password = "test"
             
+            var realm: Realm!
+            
             beforeEach {
                 interactor = LoginRegistrationInteractor()
+                realm = try! Realm()
             }
             
             it("login") {

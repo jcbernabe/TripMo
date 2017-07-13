@@ -9,6 +9,14 @@
 import UIKit
 import RealmSwift
 
+/**
+    Login Registration Interactor Class
+ 
+    Handles login and registration actions
+    
+    - Handle **SyncUser** login, then create a **Realm.Configuration** object to be passed to *RealmManager* class for creating a synchronized *Realm*.
+    - Execute login interactor delegate functions if login or registration process succeeds or fails.
+ */
 class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterface {
     
     weak var loginInteractorDelegate: LoginInteractorDelegate?
@@ -57,6 +65,7 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
                     self.loginInteractorDelegate?.loginFailedWithError(errorText: error.localizedDescription, isRegister: isRegister)
                 }
                 
+                CurrentUser.sharedInstance.currentUsername = username
                 self.loginInteractorDelegate?.loginSuccessful()
             }
         }
