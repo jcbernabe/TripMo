@@ -20,37 +20,24 @@ class CreateTravelInteractor: NSObject, CreateTravelInteractorInterface {
     }
     
     private func postTravel(travel: Travel) {
-//        let newTravelLog = Travel()
-//        
-//        newTravelLog.username = "test username"
-//        newTravelLog.travelDescription = "test description"
-//        
-//        newTravelLog.location = "test location"
-//        
-//        newTravelLog.accomodationName = "test accomodation name"
-//        newTravelLog.houseAmenities = "test house amenities"
-//        newTravelLog.resortAmenities = "test resort amenities"
-//        
-//        newTravelLog.activities = "test activities"
-//        
-//        let contactPerson = ContactPerson()
-//        contactPerson.name = "test name"
-//        contactPerson.contactNumber = "123456"
-//        
-//        newTravelLog.contactPerson = contactPerson
-//        
-//        newTravelLog.dateOfTravel = NSDate()
         
-        realm = RealmManager.sharedInstance.globalRealm
+        guard let synchroRealm = RealmManager.sharedInstance.synchroRealm else {
+            return;
+        }
+        
+        realm = synchroRealm
         
         travel.username = CurrentUser.sharedInstance.username()
         
         do {
             try realm?.write {
                 realm?.add(travel)
+                
+                createTravelInteractorDelegate?.postSuccessful()
             }
         } catch let error {
             print(error.localizedDescription)
+            createTravelInteractorDelegate?.postFailed(error: error)
         }
         
     }

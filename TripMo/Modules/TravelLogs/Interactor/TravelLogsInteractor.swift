@@ -19,18 +19,19 @@ class TravelLogsInteractor: NSObject, TravelLogsInteractorInterface {
     
     func fetchTravelLogs() {
         
-        self.realm = RealmManager.sharedInstance.globalRealm
+        self.realm = RealmManager.sharedInstance.localRealm
         
-//        guard let results = self.realm.objects(Travel.self) else {
-//            print("There are no travel logs")
-//            return
-//        }
+        guard let synchroRealm = RealmManager.sharedInstance.synchroRealm else {
+            self.travelLogs = self.realm.objects(Travel.self)
+            self.travelLogsInteractorDelegate?.fetchTravelLogsSuccessful(items: self.travelLogs!)
+            
+            print("There is no synchro Realm")
+            return
+        }
         
-        let results = self.realm.objects(Travel.self)
+        let results = synchroRealm.objects(Travel.self)
         
-        print(results)
         self.travelLogs = results
-     
         self.travelLogsInteractorDelegate?.fetchTravelLogsSuccessful(items: self.travelLogs!)
 //        self.travelLogsInteractorDelegate?.fetchTravelLogsFailedWithErrors(error: Error())
         

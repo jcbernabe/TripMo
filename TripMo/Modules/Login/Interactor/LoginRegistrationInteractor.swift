@@ -41,6 +41,10 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
      */
     private func performLoginRegisterProcess(username: String, password: String, isRegister: Bool) {
         
+        if SyncUser.all.count != 0 {
+            SyncUser.current?.logOut()
+        }
+        
         let syncCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: isRegister)
         
         SyncUser.logIn(with: syncCredentials, server: URL(string: "http://127.0.0.1:9080")!, timeout: 60) { (user, error) in
@@ -50,17 +54,17 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
                 return;
             }
             
-            
             DispatchQueue.main.async {
                 
-                let theUrl = URL(string: "realm://127.0.0.1:9080/~/\(username)/travels")!
+                //let theUrl = URL(string: "realm://127.0.0.1:9080/~/\(username)/travels")!
+                let theUrl = URL(string: "realm://127.0.0.1:9080/TripMo/travels")!
                 
                 let configuration = Realm.Configuration(
                     syncConfiguration: SyncConfiguration(user: user, realmURL: theUrl)
                 )
                 
                 do {
-                    try RealmManager.sharedInstance.openSynchronizedRealmWith(configuration: configuration)
+                    try RealmManager.sharedInstance.openSynchronizedRealmWith(configuration: configuration, user: user)
                 } catch let error {
                     self.loginInteractorDelegate?.loginFailedWithError(errorText: error.localizedDescription, isRegister: isRegister)
                 }

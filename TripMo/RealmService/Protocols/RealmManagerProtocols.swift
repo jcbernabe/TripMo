@@ -16,5 +16,5 @@ protocol RealmManagerInterface {
      
         **throws** error.
      */
-    func openSynchronizedRealmWith(configuration: Realm.Configuration) throws
+    func openSynchronizedRealmWith(configuration: Realm.Configuration, user: SyncUser) throws
 }

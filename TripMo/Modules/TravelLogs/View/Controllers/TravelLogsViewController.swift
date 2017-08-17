@@ -20,6 +20,11 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         
         travelLogsPresenter.travelLogsPresenterDelegate = self;
+        
+        fetchTravelLogs()
+    }
+    
+    func fetchTravelLogs() {
         travelLogsPresenter.handleFetchTravelLogs()
     }
     

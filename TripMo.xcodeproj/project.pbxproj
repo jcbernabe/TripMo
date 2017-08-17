@@ -22,6 +22,7 @@
 		001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978131EE96B6000626323 /* CreateTravelPresenter.swift */; };
 		00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246BD21F03839A00A69ACD /* PhotosCell.swift */; };
 		00246BD51F0383A000A69ACD /* PhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00246BD41F0383A000A69ACD /* PhotosCell.xib */; };
+		005F5FA91F456C2C00C2CCD3 /* TripMoRealmConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F5FA81F456C2C00C2CCD3 /* TripMoRealmConstants.swift */; };
 		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
 		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
 		007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */; };
@@ -37,6 +38,8 @@
 		00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD681EA478F6003C30D3 /* TripMo.xcdatamodeld */; };
 		00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */; };
 		00C102CA1F06699B00A306C3 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C102C91F06699B00A306C3 /* Activities.swift */; };
+		00DE9E621F206350000AA200 /* CreateTravelInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE9E611F206350000AA200 /* CreateTravelInteractorTests.swift */; };
+		00DE9E641F208790000AA200 /* TravelLogsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DE9E631F208790000AA200 /* TravelLogsViewControllerTests.swift */; };
 		00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88821EF8DE7A00137243 /* RealmManager.swift */; };
 		00DF88851EF919D100137243 /* TravelLogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88841EF919D100137243 /* TravelLogsPresenter.swift */; };
 		00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DF88861EF919E000137243 /* TravelLogsInteractor.swift */; };
@@ -91,6 +94,7 @@
 		001978131EE96B6000626323 /* CreateTravelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelPresenter.swift; sourceTree = "<group>"; };
 		00246BD21F03839A00A69ACD /* PhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		00246BD41F0383A000A69ACD /* PhotosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosCell.xib; sourceTree = "<group>"; };
+		005F5FA81F456C2C00C2CCD3 /* TripMoRealmConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripMoRealmConstants.swift; sourceTree = "<group>"; };
 		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
 		007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractor.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 		00A6FD691EA478F6003C30D3 /* TripMo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TripMo.xcdatamodel; sourceTree = "<group>"; };
 		00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		00C102C91F06699B00A306C3 /* Activities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		00DE9E611F206350000AA200 /* CreateTravelInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelInteractorTests.swift; sourceTree = "<group>"; };
+		00DE9E631F208790000AA200 /* TravelLogsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsViewControllerTests.swift; sourceTree = "<group>"; };
 		00DF88821EF8DE7A00137243 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		00DF88841EF919D100137243 /* TravelLogsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsPresenter.swift; sourceTree = "<group>"; };
 		00DF88861EF919E000137243 /* TravelLogsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelLogsInteractor.swift; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		001977E41EE94E6800626323 /* RealmManager */ = {
 			isa = PBXGroup;
 			children = (
+				005F5FA81F456C2C00C2CCD3 /* TripMoRealmConstants.swift */,
 				00DF88821EF8DE7A00137243 /* RealmManager.swift */,
 			);
 			path = RealmManager;
@@ -433,6 +440,7 @@
 		00A6FD3F1EA46414003C30D3 /* TripMoTests */ = {
 			isa = PBXGroup;
 			children = (
+				00DE9E5E1F20618E000AA200 /* TravelLogsTests */,
 				00A6FD401EA46414003C30D3 /* TripMoTests.swift */,
 				00A6FD6D1EA479D7003C30D3 /* LoginViewControllerTests.swift */,
 				00DF888F1EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift */,
@@ -561,6 +569,15 @@
 				00A6FD321EA46414003C30D3 /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		00DE9E5E1F20618E000AA200 /* TravelLogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				00DE9E611F206350000AA200 /* CreateTravelInteractorTests.swift */,
+				00DE9E631F208790000AA200 /* TravelLogsViewControllerTests.swift */,
+			);
+			path = TravelLogsTests;
 			sourceTree = "<group>";
 		};
 		00DF888A1EFA12DF00137243 /* Protocols */ = {
@@ -913,6 +930,7 @@
 				00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */,
 				001977FC1EE9574600626323 /* Amenities.swift in Sources */,
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
+				005F5FA91F456C2C00C2CCD3 /* TripMoRealmConstants.swift in Sources */,
 				00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -921,6 +939,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DE9E621F206350000AA200 /* CreateTravelInteractorTests.swift in Sources */,
+				00DE9E641F208790000AA200 /* TravelLogsViewControllerTests.swift in Sources */,
 				00E13B021F0DF86600027DD8 /* LoginPresenterTests.swift in Sources */,
 				00DF88901EFA1C7F00137243 /* LoginRegistrationInteractorTests.swift in Sources */,
 				00A6FD6E1EA479D7003C30D3 /* LoginViewControllerTests.swift in Sources */,
