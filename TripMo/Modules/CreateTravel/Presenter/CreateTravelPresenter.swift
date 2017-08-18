@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CreateTravelPresenter: NSObject, CreateTravelPresenterInterface, CreateTravelInteractorDelegate {
     
@@ -27,11 +28,16 @@ class CreateTravelPresenter: NSObject, CreateTravelPresenterInterface, CreateTra
     
 // MARK: - Create Travel Interactor Delegate Methods
     func postSuccessful() {
-        
+        createTravelPresenterDelegate?.showSuccessfulPost()
     }
     
     func postFailed(error: Error) {
         
+        let alert = UIAlertController(title: "Create Travel Error", message: error.localizedDescription, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        createTravelPresenterDelegate?.showFailedPost(alertController: alert)
     }
     
 }

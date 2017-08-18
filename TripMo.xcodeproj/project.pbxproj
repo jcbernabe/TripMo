@@ -22,6 +22,17 @@
 		001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001978131EE96B6000626323 /* CreateTravelPresenter.swift */; };
 		00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00246BD21F03839A00A69ACD /* PhotosCell.swift */; };
 		00246BD51F0383A000A69ACD /* PhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00246BD41F0383A000A69ACD /* PhotosCell.xib */; };
+		003C06FE1F47076900591CC4 /* TravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C06FA1F47076900591CC4 /* TravelViewController.swift */; };
+		003C07011F47083E00591CC4 /* TravelPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C06FF1F47083E00591CC4 /* TravelPhotosCell.swift */; };
+		003C07021F47083E00591CC4 /* TravelPhotosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003C07001F47083E00591CC4 /* TravelPhotosCell.xib */; };
+		003C07051F47088200591CC4 /* TravelAccomodationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C07031F47088200591CC4 /* TravelAccomodationCell.swift */; };
+		003C07061F47088200591CC4 /* TravelAccomodationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003C07041F47088200591CC4 /* TravelAccomodationCell.xib */; };
+		003C07091F47088F00591CC4 /* TravelActivitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C07071F47088F00591CC4 /* TravelActivitiesCell.swift */; };
+		003C070A1F47088F00591CC4 /* TravelActivitiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003C07081F47088F00591CC4 /* TravelActivitiesCell.xib */; };
+		003C070D1F4708A500591CC4 /* TravelContactsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C070B1F4708A500591CC4 /* TravelContactsCell.swift */; };
+		003C070E1F4708A500591CC4 /* TravelContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003C070C1F4708A500591CC4 /* TravelContactsCell.xib */; };
+		003C07111F4708B300591CC4 /* TravelOtherDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C070F1F4708B300591CC4 /* TravelOtherDetailsCell.swift */; };
+		003C07121F4708B300591CC4 /* TravelOtherDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003C07101F4708B300591CC4 /* TravelOtherDetailsCell.xib */; };
 		005F5FA91F456C2C00C2CCD3 /* TripMoRealmConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F5FA81F456C2C00C2CCD3 /* TripMoRealmConstants.swift */; };
 		007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBF51EE15A2700B6F06E /* ViewController.swift */; };
 		007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007CDBF71EE15A8E00B6F06E /* TravelLogs.storyboard */; };
@@ -94,6 +105,17 @@
 		001978131EE96B6000626323 /* CreateTravelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTravelPresenter.swift; sourceTree = "<group>"; };
 		00246BD21F03839A00A69ACD /* PhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		00246BD41F0383A000A69ACD /* PhotosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosCell.xib; sourceTree = "<group>"; };
+		003C06FA1F47076900591CC4 /* TravelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelViewController.swift; sourceTree = "<group>"; };
+		003C06FF1F47083E00591CC4 /* TravelPhotosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelPhotosCell.swift; sourceTree = "<group>"; };
+		003C07001F47083E00591CC4 /* TravelPhotosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelPhotosCell.xib; sourceTree = "<group>"; };
+		003C07031F47088200591CC4 /* TravelAccomodationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelAccomodationCell.swift; sourceTree = "<group>"; };
+		003C07041F47088200591CC4 /* TravelAccomodationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelAccomodationCell.xib; sourceTree = "<group>"; };
+		003C07071F47088F00591CC4 /* TravelActivitiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelActivitiesCell.swift; sourceTree = "<group>"; };
+		003C07081F47088F00591CC4 /* TravelActivitiesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelActivitiesCell.xib; sourceTree = "<group>"; };
+		003C070B1F4708A500591CC4 /* TravelContactsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelContactsCell.swift; sourceTree = "<group>"; };
+		003C070C1F4708A500591CC4 /* TravelContactsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelContactsCell.xib; sourceTree = "<group>"; };
+		003C070F1F4708B300591CC4 /* TravelOtherDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelOtherDetailsCell.swift; sourceTree = "<group>"; };
+		003C07101F4708B300591CC4 /* TravelOtherDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelOtherDetailsCell.xib; sourceTree = "<group>"; };
 		005F5FA81F456C2C00C2CCD3 /* TripMoRealmConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripMoRealmConstants.swift; sourceTree = "<group>"; };
 		007CDBF51EE15A2700B6F06E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		007CDBF81EE15A8E00B6F06E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TravelLogs.storyboard; sourceTree = "<group>"; };
@@ -376,6 +398,96 @@
 			path = CreateTravelCells;
 			sourceTree = "<group>";
 		};
+		003C06F11F47039C00591CC4 /* TravelView */ = {
+			isa = PBXGroup;
+			children = (
+				003C06F21F47039C00591CC4 /* Entity */,
+				003C06F31F47039C00591CC4 /* Interactor */,
+				003C06F41F47039C00591CC4 /* Presenter */,
+				003C06F51F47039C00591CC4 /* Protocols */,
+				003C06F61F47039C00591CC4 /* View */,
+			);
+			path = TravelView;
+			sourceTree = "<group>";
+		};
+		003C06F21F47039C00591CC4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		003C06F31F47039C00591CC4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		003C06F41F47039C00591CC4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		003C06F51F47039C00591CC4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		003C06F61F47039C00591CC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				003C06F91F47076900591CC4 /* Controllers */,
+				003C06FB1F47076900591CC4 /* ViewModels */,
+				003C06FC1F47076900591CC4 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		003C06F91F47076900591CC4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				003C06FA1F47076900591CC4 /* TravelViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		003C06FB1F47076900591CC4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		003C06FC1F47076900591CC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				003C06FD1F47076900591CC4 /* TravelViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		003C06FD1F47076900591CC4 /* TravelViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				003C06FF1F47083E00591CC4 /* TravelPhotosCell.swift */,
+				003C07001F47083E00591CC4 /* TravelPhotosCell.xib */,
+				003C07031F47088200591CC4 /* TravelAccomodationCell.swift */,
+				003C07041F47088200591CC4 /* TravelAccomodationCell.xib */,
+				003C07071F47088F00591CC4 /* TravelActivitiesCell.swift */,
+				003C07081F47088F00591CC4 /* TravelActivitiesCell.xib */,
+				003C070B1F4708A500591CC4 /* TravelContactsCell.swift */,
+				003C070C1F4708A500591CC4 /* TravelContactsCell.xib */,
+				003C070F1F4708B300591CC4 /* TravelOtherDetailsCell.swift */,
+				003C07101F4708B300591CC4 /* TravelOtherDetailsCell.xib */,
+			);
+			path = TravelViewCells;
+			sourceTree = "<group>";
+		};
 		007CDBF41EE15A1900B6F06E /* InitialView */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +584,7 @@
 			children = (
 				007CDBF41EE15A1900B6F06E /* InitialView */,
 				00A6FD5D1EA478C9003C30D3 /* Login */,
+				003C06F11F47039C00591CC4 /* TravelView */,
 				001977E51EE94EAC00626323 /* TravelLogs */,
 				001977FF1EE963F500626323 /* CreateTravel */,
 			);
@@ -730,14 +843,19 @@
 			files = (
 				00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */,
 				0019780E1EE965E600626323 /* LocationSearchCell.xib in Resources */,
+				003C070E1F4708A500591CC4 /* TravelContactsCell.xib in Resources */,
+				003C07121F4708B300591CC4 /* TravelOtherDetailsCell.xib in Resources */,
 				00EF27C61F138541005F2A37 /* ContactPersonCell.xib in Resources */,
 				00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */,
 				00246BD51F0383A000A69ACD /* PhotosCell.xib in Resources */,
 				00EF27CE1F1392F1005F2A37 /* AccomodationCell.xib in Resources */,
+				003C07061F47088200591CC4 /* TravelAccomodationCell.xib in Resources */,
 				00A6FD2E1EA46414003C30D3 /* Login.storyboard in Resources */,
 				007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */,
 				00EF27CA1F138B5F005F2A37 /* OtherDetailsCell.xib in Resources */,
 				00EF27C21F134BA1005F2A37 /* CreateTravelTableHeader.xib in Resources */,
+				003C070A1F47088F00591CC4 /* TravelActivitiesCell.xib in Resources */,
+				003C07021F47083E00591CC4 /* TravelPhotosCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +1021,7 @@
 				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
 				001977FE1EE959D700626323 /* ContactPerson.swift in Sources */,
 				00EF27CD1F1392F1005F2A37 /* AccomodationCell.swift in Sources */,
+				003C070D1F4708A500591CC4 /* TravelContactsCell.swift in Sources */,
 				00EF27D01F172BE8005F2A37 /* CurrentUser.swift in Sources */,
 				0019780D1EE965E600626323 /* LocationSearchCell.swift in Sources */,
 				00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */,
@@ -910,6 +1029,7 @@
 				001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */,
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
 				00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */,
+				003C07011F47083E00591CC4 /* TravelPhotosCell.swift in Sources */,
 				001977F21EE9518500626323 /* TravelListCell.swift in Sources */,
 				007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */,
 				001977EF1EE94F9E00626323 /* TravelLogsViewController.swift in Sources */,
@@ -919,13 +1039,17 @@
 				00EF27C51F138541005F2A37 /* ContactPersonCell.swift in Sources */,
 				001978091EE9640F00626323 /* CreateTravelViewController.swift in Sources */,
 				00EF27C81F138B52005F2A37 /* OtherDetailsCell.swift in Sources */,
+				003C07091F47088F00591CC4 /* TravelActivitiesCell.swift in Sources */,
+				003C07051F47088200591CC4 /* TravelAccomodationCell.swift in Sources */,
 				007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */,
 				001977F81EE953D000626323 /* TravelListCellViewModel.swift in Sources */,
+				003C06FE1F47076900591CC4 /* TravelViewController.swift in Sources */,
 				001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */,
 				001977FA1EE956AA00626323 /* Travel.swift in Sources */,
 				00C102CA1F06699B00A306C3 /* Activities.swift in Sources */,
 				001978121EE96B5600626323 /* CreateTravelInteractor.swift in Sources */,
 				00EF27C01F134B97005F2A37 /* CreateTravelTableHeader.swift in Sources */,
+				003C07111F4708B300591CC4 /* TravelOtherDetailsCell.swift in Sources */,
 				007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */,
 				00DF88831EF8DE7A00137243 /* RealmManager.swift in Sources */,
 				001977FC1EE9574600626323 /* Amenities.swift in Sources */,

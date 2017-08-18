@@ -20,9 +20,13 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         
         travelLogsPresenter.travelLogsPresenterDelegate = self;
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         fetchTravelLogs()
     }
+    
+// MARK: - Fetch Travel Logs
     
     func fetchTravelLogs() {
         travelLogsPresenter.handleFetchTravelLogs()
@@ -50,13 +54,21 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
         
         cell.initWithTravelData(data: self.travelData[indexPath.row])
         
+        cell.selectionStyle = .none
+        
         return cell;
     }
     
 // MARK: - UITableView Delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: "ShowTravelView", sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowTravelView" {
+            let vc = segue.destination as! TravelViewController
+            vc.title = "Location Name"
+        }
+    }
 }

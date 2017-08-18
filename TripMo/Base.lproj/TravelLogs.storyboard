@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VqT-Q0-gXe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VqT-Q0-gXe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -103,11 +104,49 @@
                     </navigationItem>
                     <connections>
                         <outlet property="travelListTable" destination="UyF-mU-Cqn" id="fRK-3w-8D8"/>
+                        <segue destination="HGT-an-dZQ" kind="show" identifier="ShowTravelView" id="SAW-62-3yX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjj-v5-lkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-10"/>
+        </scene>
+        <!--Travel View Controller-->
+        <scene sceneID="sHE-LT-Fyk">
+            <objects>
+                <viewController id="HGT-an-dZQ" customClass="TravelViewController" customModule="TripMo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tKo-gK-wo3"/>
+                        <viewControllerLayoutGuide type="bottom" id="NjU-qF-zZd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaa-uv-A8n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Apt-zC-74f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HGT-an-dZQ" id="csl-g1-c8W"/>
+                                    <outlet property="delegate" destination="HGT-an-dZQ" id="XXR-YO-4YM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Apt-zC-74f" firstAttribute="top" secondItem="yaa-uv-A8n" secondAttribute="top" id="FGD-yc-ePq"/>
+                            <constraint firstItem="Apt-zC-74f" firstAttribute="leading" secondItem="yaa-uv-A8n" secondAttribute="leading" id="Gka-cG-a5v"/>
+                            <constraint firstAttribute="trailing" secondItem="Apt-zC-74f" secondAttribute="trailing" id="O8W-JY-yab"/>
+                            <constraint firstItem="NjU-qF-zZd" firstAttribute="top" secondItem="Apt-zC-74f" secondAttribute="bottom" id="VUy-sL-ebV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="travelDetailsTable" destination="Apt-zC-74f" id="gVl-YT-Uh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEj-vU-inf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.79999999999995" y="-10.344827586206897"/>
         </scene>
         <!--Create Travel View Controller-->
         <scene sceneID="pnF-o4-CrR">
@@ -161,7 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9f-P3-NdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.5999999999999" y="-10.344827586206897"/>
+            <point key="canvasLocation" x="833" y="743"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vb1-7f-Pji">
@@ -197,7 +236,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTv-pE-5hz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256.8" y="-10.344827586206897"/>
+            <point key="canvasLocation" x="132" y="743"/>
         </scene>
     </scenes>
 </document>

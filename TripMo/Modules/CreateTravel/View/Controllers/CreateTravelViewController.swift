@@ -83,7 +83,7 @@ class CreateTravelViewController: UIViewController, UITableViewDelegate, UITable
 // MARK: - Create Travel Presenter Delegate Functions
     
     func showSuccessfulPost() {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     func showFailedPost(alertController: UIAlertController) {
