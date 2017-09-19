@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PopupDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1440593DED702257C11EB5BAAC5F1B22</key>
+		<key>055E5C3B5B45B08A7A0E2F149DB41BA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1077ADEAAC771D9D50B9866007F47D81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A5C1D25FA867627A7652499614E1924</key>
+		<key>65DA0EB370FA1A3A13C90E8EDB0E8F07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A18228B3E739C5CB3E9E159F06B4695F</key>
+		<key>C43B40D65BB7FF3017AC592A5BEE0971</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -47,7 +47,7 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
         
         let syncCredentials = SyncCredentials.usernamePassword(username: username, password: password, register: isRegister)
         
-        SyncUser.logIn(with: syncCredentials, server: URL(string: "http://127.0.0.1:9080")!, timeout: 60) { (user, error) in
+        SyncUser.logIn(with: syncCredentials, server: URL(string: TripMoRealmConstants.localURL)!, timeout: 60) { (user, error) in
             
             guard let user = user else {
                 self.loginInteractorDelegate?.loginFailedWithError(errorText: (error?.localizedDescription)!, isRegister: isRegister)
@@ -57,7 +57,7 @@ class LoginRegistrationInteractor: NSObject, LoginRegistrationInteractorInterfac
             DispatchQueue.main.async {
                 
                 //let theUrl = URL(string: "realm://127.0.0.1:9080/~/\(username)/travels")!
-                let theUrl = URL(string: "realm://127.0.0.1:9080/TripMo/travels")!
+                let theUrl = URL(string: "realm://\(TripMoRealmConstants.localHost)/TripMo/travels")!
                 
                 let configuration = Realm.Configuration(
                     syncConfiguration: SyncConfiguration(user: user, realmURL: theUrl)

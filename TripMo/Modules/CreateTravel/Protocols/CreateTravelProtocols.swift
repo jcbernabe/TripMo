@@ -86,6 +86,8 @@ protocol CreateTravelCellInterface {
 /// Create Travel cells delegate functions
 protocol CreateTravelCellDelegate: class {
     
+    func presentPopup(isAmenities: Bool)
+    
 }
 
 /// Location cell data source functions

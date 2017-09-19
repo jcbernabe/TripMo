@@ -5,6 +5,7 @@ target 'TripMo' do
   use_frameworks!
 
 pod ‘RealmSwift’
+pod 'PopupDialog'
 
   # Pods for TripMo
 

@@ -10,6 +10,8 @@ import UIKit
 
 class TravelViewController: UIViewController {
     
+    var travelViewCellModel: TravelViewCellModel!
+    
     @IBOutlet weak var travelDetailsTable: UITableView!
 
     override func viewDidLoad() {
@@ -37,12 +39,63 @@ extension TravelViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return 4;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TravelAccomodationCell", for: indexPath)
+        return createCell(toTableView: tableView, atIndex: indexPath)
+    }
+    
+    func generateCellIdentifierAtIndex(indexPath: IndexPath) -> String {
         
+        var identifier = ""
+        
+        switch indexPath.row {
+        case 0: identifier = "TravelPhotosCell"
+        case 1: identifier = "TravelAccomodationCell"
+        case 2: identifier = "TravelContactsCell"
+        case 3: identifier = "TravelOtherDetailsCell"
+            
+        default:
+            break
+        }
+        
+        return identifier
+    }
+    
+    func createCell(toTableView: UITableView, atIndex: IndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
+        let cellIdentifier = generateCellIdentifierAtIndex(indexPath: atIndex)
+        
+//        cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as TravelViewCellInterface
+//        cell.showWithTravelData(travelData: travelViewCellModel)
+        
+        switch atIndex.row {
+        case 0:
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
+           
+            
+        case 1:
+            let accomodationCell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! TravelAccomodationCell
+            accomodationCell.showWithTravelData(travelData: travelViewCellModel)
+            cell = accomodationCell
+
+        case 2:
+            let contactsCell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! TravelContactsCell
+            contactsCell.showWithTravelData(travelData: travelViewCellModel)
+            cell = contactsCell
+            
+        case 3:
+            let otherDetailsCell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! TravelOtherDetailsCell
+            otherDetailsCell.showWithTravelData(travelData: travelViewCellModel)
+            cell = otherDetailsCell
+            
+        default:
+            break
+        }
+        
+        cell.selectionStyle = .none
         return cell
     }
 }

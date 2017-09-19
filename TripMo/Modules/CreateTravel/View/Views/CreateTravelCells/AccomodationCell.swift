@@ -19,6 +19,9 @@ class AccomodationCell: UITableViewCell, CreateTravelCellInterface, Accomodation
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        amenitiesLabel.text = ""
+        activitiesLabel.text = ""
     }
     
 // MARK: - Accomodation Data Source
@@ -28,11 +31,11 @@ class AccomodationCell: UITableViewCell, CreateTravelCellInterface, Accomodation
     
 // MARK: - UIButton Selectors
     @IBAction func addAmenitiesTapped(_ sender: Any) {
-        
+        createTravelCellDelegate?.presentPopup(isAmenities: true)
     }
     
     @IBAction func addActivitiesTapped(_ sender: Any) {
-        
+        createTravelCellDelegate?.presentPopup(isAmenities: false)
     }
     
 }

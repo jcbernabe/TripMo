@@ -16,6 +16,8 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     var travelData: Array<TravelListCellViewModel> = []
     
+    var selectedIdx: NSIndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +64,9 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
 // MARK: - UITableView Delegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedIdx = indexPath as NSIndexPath
+        
         self.performSegue(withIdentifier: "ShowTravelView", sender: self)
     }
 
@@ -69,6 +74,9 @@ class TravelLogsViewController: UIViewController, UITableViewDelegate, UITableVi
         if segue.identifier == "ShowTravelView" {
             let vc = segue.destination as! TravelViewController
             vc.title = "Location Name"
+            
+            let travelCellVM = TravelViewCellModel(travelData: self.travelData[(selectedIdx?.row)!].travelData)
+            vc.travelViewCellModel = travelCellVM
         }
     }
 }

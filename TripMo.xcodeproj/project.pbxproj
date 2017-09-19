@@ -39,6 +39,12 @@
 		007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */; };
 		007CDC011EE18AAF00B6F06E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */; };
 		007CDC031EE18B0400B6F06E /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007CDC021EE18B0400B6F06E /* LoginProtocols.swift */; };
+		008230311F6F8D0000CB75DC /* PopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082302F1F6F8D0000CB75DC /* PopupController.swift */; };
+		008230321F6F8D0000CB75DC /* PopupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008230301F6F8D0000CB75DC /* PopupController.xib */; };
+		0099BDBA1F4A9B7C0079A09F /* TravelViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099BDB91F4A9B7C0079A09F /* TravelViewPresenter.swift */; };
+		0099BDBC1F4A9B8C0079A09F /* TravelViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099BDBB1F4A9B8C0079A09F /* TravelViewInteractor.swift */; };
+		0099BDBE1F4A9BAD0079A09F /* TravelViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099BDBD1F4A9BAD0079A09F /* TravelViewCellModel.swift */; };
+		0099BDC01F4AB9A80079A09F /* TravelViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0099BDBF1F4AB9A80079A09F /* TravelViewProtocols.swift */; };
 		00A6FD2E1EA46414003C30D3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD2C1EA46414003C30D3 /* Login.storyboard */; };
 		00A6FD331EA46414003C30D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD321EA46414003C30D3 /* Assets.xcassets */; };
 		00A6FD361EA46414003C30D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A6FD341EA46414003C30D3 /* LaunchScreen.storyboard */; };
@@ -122,6 +128,12 @@
 		007CDBFC1EE1870E00B6F06E /* LoginRegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegistrationInteractor.swift; sourceTree = "<group>"; };
 		007CDC001EE18AAF00B6F06E /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		007CDC021EE18B0400B6F06E /* LoginProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		0082302F1F6F8D0000CB75DC /* PopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupController.swift; sourceTree = "<group>"; };
+		008230301F6F8D0000CB75DC /* PopupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupController.xib; sourceTree = "<group>"; };
+		0099BDB91F4A9B7C0079A09F /* TravelViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelViewPresenter.swift; sourceTree = "<group>"; };
+		0099BDBB1F4A9B8C0079A09F /* TravelViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelViewInteractor.swift; sourceTree = "<group>"; };
+		0099BDBD1F4A9BAD0079A09F /* TravelViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelViewCellModel.swift; sourceTree = "<group>"; };
+		0099BDBF1F4AB9A80079A09F /* TravelViewProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelViewProtocols.swift; sourceTree = "<group>"; };
 		00A6FD251EA46414003C30D3 /* TripMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A6FD2D1EA46414003C30D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		00A6FD321EA46414003C30D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -360,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				001978081EE9640F00626323 /* CreateTravelViewController.swift */,
+				0082302F1F6F8D0000CB75DC /* PopupController.swift */,
+				008230301F6F8D0000CB75DC /* PopupController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +434,7 @@
 		003C06F31F47039C00591CC4 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				0099BDBB1F4A9B8C0079A09F /* TravelViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -427,6 +442,7 @@
 		003C06F41F47039C00591CC4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				0099BDB91F4A9B7C0079A09F /* TravelViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -434,6 +450,7 @@
 		003C06F51F47039C00591CC4 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0099BDBF1F4AB9A80079A09F /* TravelViewProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -459,6 +476,7 @@
 		003C06FB1F47076900591CC4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0099BDBD1F4A9BAD0079A09F /* TravelViewCellModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -853,6 +871,7 @@
 				00A6FD2E1EA46414003C30D3 /* Login.storyboard in Resources */,
 				007CDBF91EE15A8E00B6F06E /* TravelLogs.storyboard in Resources */,
 				00EF27CA1F138B5F005F2A37 /* OtherDetailsCell.xib in Resources */,
+				008230321F6F8D0000CB75DC /* PopupController.xib in Resources */,
 				00EF27C21F134BA1005F2A37 /* CreateTravelTableHeader.xib in Resources */,
 				003C070A1F47088F00591CC4 /* TravelActivitiesCell.xib in Resources */,
 				003C07021F47083E00591CC4 /* TravelPhotosCell.xib in Resources */,
@@ -1020,6 +1039,7 @@
 			files = (
 				00A6FD661EA478C9003C30D3 /* LoginViewController.swift in Sources */,
 				001977FE1EE959D700626323 /* ContactPerson.swift in Sources */,
+				0099BDC01F4AB9A80079A09F /* TravelViewProtocols.swift in Sources */,
 				00EF27CD1F1392F1005F2A37 /* AccomodationCell.swift in Sources */,
 				003C070D1F4708A500591CC4 /* TravelContactsCell.swift in Sources */,
 				00EF27D01F172BE8005F2A37 /* CurrentUser.swift in Sources */,
@@ -1027,6 +1047,7 @@
 				00DF88871EF919E000137243 /* TravelLogsInteractor.swift in Sources */,
 				001977F41EE9535D00626323 /* TravelListProtocols.swift in Sources */,
 				001978141EE96B6000626323 /* CreateTravelPresenter.swift in Sources */,
+				0099BDBE1F4A9BAD0079A09F /* TravelViewCellModel.swift in Sources */,
 				00A6FD6A1EA478F6003C30D3 /* TripMo.xcdatamodeld in Sources */,
 				00DF888E1EFA12FE00137243 /* RealmManagerProtocols.swift in Sources */,
 				003C07011F47083E00591CC4 /* TravelPhotosCell.swift in Sources */,
@@ -1038,10 +1059,12 @@
 				007CDBF61EE15A2700B6F06E /* ViewController.swift in Sources */,
 				00EF27C51F138541005F2A37 /* ContactPersonCell.swift in Sources */,
 				001978091EE9640F00626323 /* CreateTravelViewController.swift in Sources */,
+				0099BDBA1F4A9B7C0079A09F /* TravelViewPresenter.swift in Sources */,
 				00EF27C81F138B52005F2A37 /* OtherDetailsCell.swift in Sources */,
 				003C07091F47088F00591CC4 /* TravelActivitiesCell.swift in Sources */,
 				003C07051F47088200591CC4 /* TravelAccomodationCell.swift in Sources */,
 				007CDBFD1EE1870E00B6F06E /* LoginRegistrationInteractor.swift in Sources */,
+				0099BDBC1F4A9B8C0079A09F /* TravelViewInteractor.swift in Sources */,
 				001977F81EE953D000626323 /* TravelListCellViewModel.swift in Sources */,
 				003C06FE1F47076900591CC4 /* TravelViewController.swift in Sources */,
 				001978101EE96B4400626323 /* CreateTravelProtocols.swift in Sources */,
@@ -1056,6 +1079,7 @@
 				00A6FD5B1EA46661003C30D3 /* AppDelegate.swift in Sources */,
 				005F5FA91F456C2C00C2CCD3 /* TripMoRealmConstants.swift in Sources */,
 				00246BD31F03839A00A69ACD /* PhotosCell.swift in Sources */,
+				008230311F6F8D0000CB75DC /* PopupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

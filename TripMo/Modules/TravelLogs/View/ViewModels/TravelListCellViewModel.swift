@@ -12,14 +12,15 @@ struct TravelListCellViewModel {
     
     let travelData: Travel
     
-    let username: String
-    let travelDescription: String
-    
     init(travelData: Travel) {
         self.travelData = travelData
-        
-        self.username = travelData.username
-        self.travelDescription = travelData.travelDescription
     }
     
+    func username() -> String {
+        return self.travelData.username
+    }
+    
+    func travelDescription() -> String {
+        return self.travelData.travelDescription
+    }
 }

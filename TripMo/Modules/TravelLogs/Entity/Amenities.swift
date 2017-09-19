@@ -12,43 +12,43 @@ import RealmSwift
 /**
     Basic amenities found on houses or rooms accomodation.
  */
-enum AmenitiesSelection {
+enum AmenitiesSelection: String {
     /// Privately occupied room.
-    case PrivateRoom
+    case PrivateRoom = "Private Room"
     /// Shared occupancy.
-    case SharedRoom
+    case SharedRoom = "Shared Room"
     /// Private bathroom for room.
-    case PrivateBath
+    case PrivateBath = "Private Bath"
     /// Shared or common bathroom.
-    case SharedBath
+    case SharedBath = "Shared Bath"
     /// Airconditioning unit available.
-    case Aircon
+    case Aircon = "Aircon"
     /// Fan unit available.
-    case Fan
+    case Fan = "Fan"
     /// Room has own television.
-    case Television
+    case Television = "Television"
     /// Room has own refrigerator
-    case Refrigerator
+    case Refrigerator = "Refrigerator"
     /// House has own dining area.
-    case DiningArea
+    case DiningArea = "Dining Area"
     /// House has own living room.
-    case LivingArea
+    case LivingArea = "Living Area"
     /// House has own kitchen area.
-    case Kitchen
+    case Kitchen = "Kitchen"
     /// Resort has its own parking area.
-    case ParkingSpace
+    case ParkingSpace = "Parking Space"
     /// Resort have a basketball court.
-    case BasketballCourt
+    case BasketballCourt = "Basketball Court"
     /// Resort have an area for playing table tennis.
-    case TableTennis
+    case TableTennis = "Table Tennis"
     /// Resort have a volleyball court.
-    case VolleyballArea
+    case VolleyballArea = "Volleyball Area"
     /// Resort has its own restaurant.
-    case Restaurant
+    case Restaurant = "Restaurant"
     /// Resort have a swimming pool.
-    case SwimmingPool
+    case SwimmingPool = "Swimming Pool"
     /// Resort have an infinity pool.
-    case InfinityPool
+    case InfinityPool = "Infinity Pool"
 }
 
 /**
@@ -57,6 +57,7 @@ enum AmenitiesSelection {
 class Amenities: Object {
     
     dynamic var id: Int = 0
+    
     
     
 //    dynamic var houseAmenities

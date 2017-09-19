@@ -12,41 +12,41 @@ import RealmSwift
 /**
     Typical activities while travelling or on a vacation trip.
  */
-enum ActivityType {
+enum ActivityType: String {
     ///
-    case UndefinedActivity
+    case UndefinedActivity = "Undefined"
     /// Bananaboat water activity.
-    case BananaBoat
+    case BananaBoat = "Banana Boat"
     /// Beach volleyball.
-    case BeachVolleyball
+    case BeachVolleyball = "Beach Volleyball"
     /// Ride your bike through trails.
-    case BikeTrail
+    case BikeTrail = "Bike Trail"
     /// Setup bonfires.
-    case Bonfire
+    case Bonfire = "Bonfire"
     /// Camp.
-    case Camping
+    case Camping = "Camping"
     /// Tour city landmarks and destinations.
-    case CityTour
+    case CityTour = "City Tour"
     /// Hike.
-    case Hiking
+    case Hiking = "Hiking"
     /// Island hopping.
-    case IslandHopping
+    case IslandHopping = "Island Hopping"
     /// Tour museums.
-    case MuseumTour
+    case MuseumTour = "Museum Tour"
     /// Paragliding.
-    case Paragliding
+    case Paragliding = "Paragliding"
     /// Spelunking.
-    case Spelunking
+    case Spelunking = "Spelunking"
     /// Snorkeling.
-    case Snorkeling
+    case Snorkeling = "Snorkeling"
     /// Scuba diving.
-    case ScubaDiving
+    case ScubaDiving = "Scuba Diving"
     /// Team building activities.
-    case TeamBuilding
+    case TeamBuilding = "Team Building"
     /// Trekking.
-    case Trekking
+    case Trekking = "Trekking"
     /// Zipline.
-    case Zipline
+    case Zipline = "Zipline"
 }
 
 /**

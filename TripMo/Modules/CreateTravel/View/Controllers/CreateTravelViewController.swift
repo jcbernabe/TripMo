@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import PopupDialog
 
 class CreateTravelViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CreateTravelPresenterDelegate, CreateTravelCellDelegate {
 
     @IBOutlet weak var createTravelTable: UITableView!
+    
+    var popup: PopupDialog?
     
     weak var locationCellDataSource: LocationCellDataSource?
     weak var accomodationCellDataSource: AccomodationCellDataSource?
@@ -78,6 +81,45 @@ class CreateTravelViewController: UIViewController, UITableViewDelegate, UITable
         }
 
         createTravelPresenter.handleCreatingTravelPost(data: travelData)
+    }
+    
+// MARK: - Create Travel Cell Delegate
+    
+    func presentPopup(isAmenities: Bool) {
+        
+        let popupController = PopupController(nibName: "PopupController", bundle: nil)
+        popupController.isAmenities = isAmenities
+        
+        popup = PopupDialog(viewController: popupController, buttonAlignment: .horizontal, transitionStyle: .bounceUp, gestureDismissal: true)
+        
+        let cancelButton = CancelButton(title: "Cancel", height: 40) {
+            
+        }
+        
+        let doneButton = DefaultButton(title: "Done", height: 40) {
+            self.popupSelectedValues(values: popupController.popupSelectedValues().values, isAmenities: popupController.popupSelectedValues().isAmenities)
+        }
+        
+        popup?.addButtons([cancelButton, doneButton])
+        
+        present(popup!, animated: true, completion: nil)
+    }
+    
+    func popupSelectedValues(values: [String], isAmenities: Bool) {
+        
+        popup?.dismiss()
+        
+        let cell = createTravelTable.cellForRow(at: IndexPath(row: 0, section: 2)) as! AccomodationCell
+        
+        let stringValue = values.joined(separator: ",")
+        
+        if isAmenities {
+            cell.amenitiesLabel.text = "\(stringValue)"
+        } else {
+            cell.activitiesLabel.text = "\(stringValue)"
+        }
+
+        createTravelTable.reloadData()
     }
     
 // MARK: - Create Travel Presenter Delegate Functions
@@ -186,30 +228,32 @@ class CreateTravelViewController: UIViewController, UITableViewDelegate, UITable
         
         switch atIndex.section {
         case 0:
-            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! LocationSearchCell
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
             self.locationCellDataSource = cell as? LocationCellDataSource
             
         case 1:
-            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! PhotosCell
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
             self.photosCellDataSource = cell as? PhotosCellDataSource
             
         case 2:
-            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! AccomodationCell
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
+            let accomodationCell = cell as! AccomodationCell
+            accomodationCell.createTravelCellDelegate = self
             self.accomodationCellDataSource = cell as? AccomodationCellDataSource
             
         case 3:
-            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! ContactPersonCell
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
             self.contactPersonCellDataSource = cell as? ContactPersonCellDataSource
             
         case 4:
-            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex) as! OtherDetailsCell
+            cell = toTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: atIndex)
             self.otherDetailsCellDataSource = cell as? OtherDetailsCellDataSource
             
         default:
             break
         }
         
-        
+        cell.selectionStyle = .none
         return cell
     }
     

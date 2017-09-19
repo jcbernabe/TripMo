@@ -23,8 +23,8 @@ class TravelListCell: UITableViewCell, TravelListCellInterface {
     }
     
     func initWithTravelData(data: TravelListCellViewModel) {
-        self.usernameLabel.text = data.username
-        self.descriptionLabel.text = data.travelDescription
+        self.usernameLabel.text = data.username()
+        self.descriptionLabel.text = data.travelDescription()
     }
 
 }

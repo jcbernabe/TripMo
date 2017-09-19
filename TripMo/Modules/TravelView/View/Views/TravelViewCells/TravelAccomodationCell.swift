@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TravelAccomodationCell: UITableViewCell {
+class TravelAccomodationCell: UITableViewCell, TravelViewCellInterface {
 
     @IBOutlet weak var mainHolderView: UIView!
     
@@ -21,6 +21,12 @@ class TravelAccomodationCell: UITableViewCell {
         // Initialization code
         
         mainHolderView.layer.cornerRadius = 5.0;
+    }
+    
+    func showWithTravelData(travelData: TravelViewCellModel) {
+        accomodationLabel.text = travelData.accomodationName()
+        amenitiesLabel.text = travelData.amenities()
+        activitiesLabel.text = travelData.activities()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
